@@ -10,9 +10,9 @@ class SkillType(models.Model):
 
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
-    skill_type = models.OneToOneField(SkillType, on_delete=models.CASCADE)
+    skill_type = models.ForeignKey(SkillType, on_delete=models.CASCADE)
     correct_answer_id = models.IntegerField(default=0)
-    question_type = models.CharField(max_length=200, default="mcq")  # TODO: enum field
+    question_type = models.CharField(max_length=200, default="mcq")
     score = models.IntegerField(default=0)
 
     def __str__(self):
@@ -20,7 +20,7 @@ class Question(models.Model):
 
 
 class Answer(models.Model):
-    question = models.ForeignKey(Question, on_delete=models.CASCADE)
+    question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="answers")
     answer_text = models.CharField(max_length=1000)
 
     def __str__(self):
@@ -32,7 +32,7 @@ class Quiz(models.Model):
     pass_score = models.IntegerField(default=0)
     num_of_questions = models.IntegerField(default=1)
     expected_duration = models.IntegerField(default=10)  # by mins
-    skill_type = models.OneToOneField(SkillType, on_delete=models.CASCADE)
+    skill_type = models.ForeignKey(SkillType, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
