@@ -8,9 +8,11 @@ router = routers.DefaultRouter()
 router.register(r'questions', views.QuestionViewSet)
 router.register(r'quizzes', views.QuizViewSet)
 
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('quiz/', include('quiz.urls')),
     path('', include(router.urls)),
+    path('', include('company.urls')),
 ]

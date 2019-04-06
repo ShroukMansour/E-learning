@@ -2,44 +2,53 @@ from django.db import models
 from quiz.models import SkillType
 
 
-class Company(models.Model):
-    name = models.CharField(max_length=200)
-    location = models.CharField(max_length=200, default='Egypt')
-    num_of_employees= models.IntegerField(default=10)
-    email = models.CharField(max_length=200, default="company@gmail.com")
-    interest_fields = models.ManyToManyField(SkillType)
-
+# class Company(models.Model):
+#     name = models.CharField(max_length=200)
+#     location = models.CharField(max_length=200, default='Egypt')
+#     num_of_employees= models.IntegerField(default=10)
+#     email = models.CharField(max_length=200, default="company@gmail.com")
+#     interest_fields = models.ManyToManyField(SkillType)
+#
 
 class JobType(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, primary_key=True)
 
     def __str__(self):
         return self.name
 
 
-
-
-
 class Vacancy(models.Model):
-    company = models.ForeignKey(Company, on_delete=models.CASCADE)
+    company_id = models.IntegerField(null=False)
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=2000, default='Vacancy description')
-    requirments = models.CharField(max_length=10000, default='Vacancy requirments')
+    requirements = models.CharField(max_length=10000, default='Vacancy requirments')
     benefits = models.CharField(max_length=500)
     salary = models.IntegerField(default=1000)
-    job_type = models.OneToOneField(JobType, on_delete=models.CASCADE)
-    interest_field = models.OneToOneField(SkillType, on_delete=models.CASCADE)
+    job_types = (('Full Time', 'Full Time'), ("Part Time", "Part Time"), ("Intern", "Intern"))
+    # job_type = models.OneToOneField(JobType, on_delete=models.CASCADE)
+    job_type = models.CharField(max_length=15, choices=job_types)
+    interest_field = models.CharField(max_length=200)
 
 
 class VacancyQuestion(models.Model):
     question_text = models.CharField(max_length=200)
-    vacancy = models.ForeignKey(Vacancy, on_delete=models.CASCADE)
+    vacancy = models.ForeignKey(Vacancy, on_delete=models.CASCADE, related_name="vacancy_questions")
+
     def __str__(self):
         return self.question_text
 
 
+class Choice(models.Model):
+    class Meta:
+        unique_together = (('choice_text', 'question'),)
+
+    choice_text = models.CharField(max_length=200, primary_key=True)
+    question = models.ForeignKey(VacancyQuestion, on_delete=models.CASCADE, related_name='question_choices')
+
+
 class VacancyApplication(models.Model):
     user_id = models.IntegerField(null=False)
+    vacancy = models.ForeignKey(Vacancy, on_delete=models.CASCADE)
 
 
 class VacancyAnswer(models.Model):
@@ -49,6 +58,3 @@ class VacancyAnswer(models.Model):
 
     def __str__(self):
         return self.answer_text
-
-
-
