@@ -36,3 +36,13 @@ class Quiz(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class QuizInstance(models.Model):
+    user = models.IntegerField()    #Foreignkey to the user
+    quiz = models.ForeignKey(Quiz, on_delete=models.SET_NULL, null=True)
+    questions = models.ManyToManyField(Question)
+    start_time = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return str(self.user) + " => " + self.quiz.__str__()

@@ -1,4 +1,4 @@
-from .models import Question, SkillType, Quiz, Answer
+from .models import Question, SkillType, Quiz, Answer, QuizInstance
 from rest_framework import serializers
 
 
@@ -37,10 +37,18 @@ class QuizSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Quiz
-        fields = ['title', 'pass_score', 'num_of_questions', 'expected_duration', 'skill_type']
+        fields = ['id', 'title', 'pass_score', 'num_of_questions', 'expected_duration', 'skill_type']
 
     def create(self, validated_data):
         skill_type_data = validated_data.pop('skill_type')
         skill_type_obj = SkillType.objects.create(**skill_type_data)
         quiz = Quiz.objects.create(skill_type=skill_type_obj, **validated_data)
         return quiz
+
+
+class QuizInstanceSerializer(serializers.ModelSerializer):
+    questions = QuestionSerializer(many=True)
+
+    class Meta:
+        model = QuizInstance
+        fields = ['id', 'quiz', 'questions']
