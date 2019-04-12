@@ -14,8 +14,19 @@ class QuestionViewSet(viewsets.ModelViewSet):
 
 
 class QuizViewSet(viewsets.ModelViewSet):
-    queryset = Quiz.objects.all()
     serializer_class = QuizSerializer
+    queryset = Quiz.objects.all()
+
+    def get_queryset(self):
+        skill_type = self.request.query_params.get('skillType')
+
+        if skill_type:
+            skill_type = SkillType.objects.filter(name=skill_type)[0]
+            queryset = Quiz.objects.filter(skill_type=skill_type)
+        else:
+            queryset = Quiz.objects.all()
+
+        return queryset
 
 class QuizInstances(APIView):
     
