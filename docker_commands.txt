@@ -1,0 +1,13 @@
+// show images
+sudo docker images
+
+// build updated image
+sudo docker build -t e_learning .
+
+// run the image (0.0.0.0:8000)
+sudo docker run -p 8000:8000 -i -t e_learning
+
+//uploading
+sudo docker login --username=shroukmansour // to access docker hub
+sudo docker tag da99 shroukmansour/e-learning_quiz:intial_image // tag the image like commit
+sudo docker push shroukmansour/e-learning_quiz // to push your image
