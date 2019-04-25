@@ -44,5 +44,10 @@ class QuizInstance(models.Model):
     questions = models.ManyToManyField(Question)
     start_time = models.DateTimeField(auto_now_add=True)
 
+    #stuff filled after finish the quiz
+    marked = models.BooleanField(default=False)
+    finish_time = models.DateTimeField()
+    score = models.IntegerField()
+
     def __str__(self):
         return str(self.user) + " => " + self.quiz.__str__()

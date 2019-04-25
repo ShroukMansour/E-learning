@@ -6,6 +6,7 @@ from quiz import views
 router = routers.DefaultRouter()
 router.register(r'questions', views.QuestionViewSet)
 router.register(r'quizzes', views.QuizViewSet)
+router.register(r'skillTypes', views.SkillTypeViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

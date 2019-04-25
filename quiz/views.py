@@ -1,16 +1,27 @@
 from rest_framework import viewsets
 from rest_framework.views import APIView
 from rest_framework.response import Response
+from django.http import Http404
+from rest_framework import status
 
 from random import sample
 
 from .models import Question, Quiz, QuizInstance, SkillType
-from .serializers import QuestionSerializer, QuizSerializer, QuizInstanceSerializer
+from .serializers import QuestionSerializer, QuizSerializer, QuizInstanceSerializer, SkillTypeSerializer
 
 
 class QuestionViewSet(viewsets.ModelViewSet):
     queryset = Question.objects.all()
     serializer_class = QuestionSerializer
+
+    def create(self, request):
+        try:
+            skill_type_data = request.data['skill_type']['name']
+            skill_type_obj = SkillType.objects.get(name=skill_type_data)
+        except:
+            return Response(status=status.HTTP_400_BAD_REQUEST)
+        
+        return Response(self.serializer_class.create(self, request.data))
 
 
 class QuizViewSet(viewsets.ModelViewSet):
@@ -18,21 +29,27 @@ class QuizViewSet(viewsets.ModelViewSet):
     queryset = Quiz.objects.all()
 
     def get_queryset(self):
-        skill_type = self.request.query_params.get('skillType')
+        skill_type = self.request.query_params.getlist('skillType')
 
         if skill_type:
-            skill_type = SkillType.objects.filter(name=skill_type)[0]
-            queryset = Quiz.objects.filter(skill_type=skill_type)
+            skill_type = SkillType.objects.filter(name__in=skill_type)
+            queryset = Quiz.objects.filter(skill_type__in=skill_type)
         else:
             queryset = Quiz.objects.all()
 
         return queryset
 
+
+class SkillTypeViewSet(viewsets.ModelViewSet):
+    queryset = SkillType.objects.all()
+    serializer_class = SkillTypeSerializer
+
+
 class QuizInstances(APIView):
     
     def get(self, request, id=None):
-        quiz_to_instantiate = Quiz.objects.filter(id=id)[0]
-        quiz_skill_type = SkillType.objects.filter(name=quiz_to_instantiate.skill_type)[0]
+        quiz_to_instantiate = Quiz.objects.get(id=id)
+        quiz_skill_type = SkillType.objects.get(name=quiz_to_instantiate.skill_type)
         
         quiz_questions = Question.objects.filter(skill_type=quiz_skill_type.pk)
         quiz_questions_set = set(quiz_question for quiz_question in quiz_questions)
@@ -45,3 +62,9 @@ class QuizInstances(APIView):
         serializer = QuizInstanceSerializer(tbr)
         return Response(serializer.data)
 
+    def post(self, request, id=None):
+        quiz_instance = QuizInstance.objects.get(id=id)
+        if quiz_instance == None:
+            return Response({"error": "Wrong Quiz ID."})
+        
+        return Response(request.data)
