@@ -48,7 +48,7 @@ class QuizInstance(models.Model):
     marked = models.BooleanField(default=False)
     finish_time = models.DateTimeField(null=True)
     score = models.IntegerField(null=True)
-    passed = models.BooleanField(null=True)
+    passed = models.BooleanField(default=False)
 
     def __str__(self):
         return str(self.user) + " => " + self.quiz.__str__()
