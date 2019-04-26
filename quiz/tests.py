@@ -1,6 +1,6 @@
 from rest_framework.test import APITestCase
 from rest_framework import status
-from quiz.models import Question, SkillType
+from quiz.models import Question, SkillType, Answer
 
 
 # Create your tests here.
@@ -19,6 +19,8 @@ class QuestionTest(APITestCase):
         response = self.client.post(url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Question.objects.count(), 1)
+        self.assertEqual(Answer.objects.count(), 3)
+        self.assertEqual(SkillType.objects.count(), 1)
         self.assertEqual(Question.objects.get().question_text, "what are the most famous type of inheritance?")
 
     def test_post_question_with_new_skill(self):
@@ -34,6 +36,8 @@ class QuestionTest(APITestCase):
         response = self.client.post(url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_201_CREATED)
         self.assertEqual(Question.objects.count(), 1)
+        self.assertEqual(Answer.objects.count(), 3)
+        self.assertEqual(SkillType.objects.count(), 1)
         self.assertEqual(Question.objects.get().question_text, "what are the most famous type of inheritance?")
 
     def test_post_question_with_multiple_correct_answer(self):
@@ -49,3 +53,50 @@ class QuestionTest(APITestCase):
                 }
         response = self.client.post(url, data=data, format='json')
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_post_question_without_answers(self):
+        SkillType.objects.create(name='java')
+        url = '/questions/'
+        data = {'question_text': "what are the most famous type of inheritance?",
+                'question_type': 'MCQ',
+                'score': 1,
+                'skill_type': {"name": "java"},
+                'answers': []
+                }
+        response = self.client.post(url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    def test_post_question_with_req_parameters_only(self):
+        SkillType.objects.create(name='java')
+        url = '/questions/'
+        data = {'question_text': "what are the most famous type of inheritance?",
+                'skill_type': {"name": "java"},
+                'answers': [{"answer_text": 'public', "is_correct": True},
+                            {"answer_text": 'public'},
+                            {"answer_text": 'protected'}]
+                }
+        response = self.client.post(url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(Question.objects.count(), 1)
+        self.assertEqual(Answer.objects.count(), 3)
+        self.assertEqual(SkillType.objects.count(), 1)
+        self.assertEqual(Question.objects.get().question_type, "MCQ")
+        self.assertEqual(Question.objects.get().score, 1)
+
+    def test_post_question_with_same_choices_names(self):
+        SkillType.objects.create(name='java')
+        url = '/questions/'
+        data = {'question_text': "what are the most famous type of inheritance?",
+                'question_type': 'MCQ',
+                'score': 1,
+                'skill_type': {"name": "java"},
+                'answers': [{"answer_text": 'public', "is_correct": True},
+                            {"answer_text": 'public'},
+                            {"answer_text": 'protected'}]
+                }
+        response = self.client.post(url, data=data, format='json')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertEqual(Question.objects.count(), 1)
+        self.assertEqual(Answer.objects.count(), 3)
+        self.assertEqual(SkillType.objects.count(), 1)
+        self.assertEqual(Question.objects.get().question_text, "what are the most famous type of inheritance?")

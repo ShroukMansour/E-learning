@@ -11,8 +11,8 @@ class SkillType(models.Model):
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
     skill_type = models.ForeignKey(SkillType, on_delete=models.CASCADE)
-    question_type = models.CharField(max_length=200, default="mcq")
-    score = models.IntegerField(default=0)
+    question_type = models.CharField(max_length=200, default="MCQ")
+    score = models.IntegerField(default=1)
 
     def __str__(self):
         return self.question_text
