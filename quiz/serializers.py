@@ -11,7 +11,7 @@ class SkillTypeSerializer(serializers.ModelSerializer):
 class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
-        fields = ['answer_text']
+        fields = ['answer_text', 'is_correct']
 
 
 class QuestionSerializer(serializers.ModelSerializer):
@@ -25,7 +25,7 @@ class QuestionSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         skill_type_data = validated_data.pop('skill_type')
         answers_data = validated_data.pop('answers')
-        skill_type_obj = SkillType.objects.get( **skill_type_data)
+        skill_type_obj = SkillType.objects.get_or_create(**skill_type_data)[0]
         question = Question.objects.create(skill_type=skill_type_obj, **validated_data)
         for answer_data in answers_data:
             Answer.objects.create(question=question, **answer_data)
