@@ -3,10 +3,12 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.http import Http404
 from rest_framework import status
+from django.utils import timezone
 
 from random import sample
+from datetime import timedelta
 
-from .models import Question, Quiz, QuizInstance, SkillType
+from .models import Question, Quiz, QuizInstance, SkillType, Answer
 from .serializers import QuestionSerializer, QuizSerializer, QuizInstanceSerializer, SkillTypeSerializer
 
 
@@ -65,8 +67,41 @@ class QuizInstances(APIView):
         return Response(serializer.data)
 
     def post(self, request, id=None):
-        quiz_instance = QuizInstance.objects.get(id=id)
-        if quiz_instance == None:
-            return Response({"error": "Wrong Quiz ID."})
+        try:
+            quiz_instance = QuizInstance.objects.get(id=id)
+        except QuizInstance.DoesNotExist:
+            return Response({"error": "Wrong Quiz ID."}, status=status.HTTP_400_BAD_REQUEST)
 
-        return Response(request.data)
+        if quiz_instance.marked:
+            return Response({"error": "Quiz has already marked and saved."}, status=status.HTTP_400_BAD_REQUEST)
+
+        quiz_instance.finish_time = timezone.now()
+
+        try:
+            answers = request.data['answers']
+        except KeyError:
+            return Response({"error": "Please send your answers to be evaluated."}, status=status.HTTP_400_BAD_REQUEST)
+
+        score = 0
+        try:
+            for answer in answers:
+                atemp = Answer.objects.get(id=answer['aid'])
+                if atemp.question.id == answer['qid'] and atemp.is_correct:
+                    score += 1
+
+        except (Answer.DoesNotExist, KeyError):
+            return Response({"error": "Invalid Params."}, status=status.HTTP_400_BAD_REQUEST)
+
+        expected_finish_time = quiz_instance.start_time + timedelta(minutes=quiz_instance.quiz.expected_duration)
+
+        quiz_instance.marked = True
+        quiz_instance.score = score
+        quiz_instance.passed =\
+            (score >= quiz_instance.quiz.pass_score and \
+            quiz_instance.finish_time <= expected_finish_time)
+        quiz_instance.save()
+
+        return Response({
+            "score": score,
+            "passed": quiz_instance.passed
+        })

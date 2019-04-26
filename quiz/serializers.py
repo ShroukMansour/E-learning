@@ -11,7 +11,7 @@ class SkillTypeSerializer(serializers.ModelSerializer):
 class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
-        fields = ['answer_text', 'is_correct']
+        fields = ['id', 'answer_text']
 
 
 class QuestionSerializer(serializers.ModelSerializer):
@@ -20,7 +20,7 @@ class QuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Question
-        fields = ['question_text', 'question_type', 'score', 'skill_type', 'answers']
+        fields = ['id', 'question_text', 'question_type', 'score', 'skill_type', 'answers']
 
     def create(self, validated_data):
         skill_type_data = validated_data.pop('skill_type')
@@ -41,7 +41,7 @@ class QuizSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         skill_type_data = validated_data.pop('skill_type')
-        skill_type_obj = SkillType.objects.get_or_create(**skill_type_data)
+        skill_type_obj = SkillType.objects.get_or_create(**skill_type_data)[0]
         quiz = Quiz.objects.create(skill_type=skill_type_obj, **validated_data)
         return quiz
 

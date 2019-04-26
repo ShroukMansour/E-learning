@@ -40,14 +40,15 @@ class Quiz(models.Model):
 
 class QuizInstance(models.Model):
     user = models.IntegerField()    #Foreignkey to the user
-    quiz = models.ForeignKey(Quiz, on_delete=models.SET_NULL, null=True)
+    quiz = models.ForeignKey(Quiz, on_delete=models.CASCADE, null=True)
     questions = models.ManyToManyField(Question)
     start_time = models.DateTimeField(auto_now_add=True)
 
     #stuff filled after finishing the quiz
     marked = models.BooleanField(default=False)
-    finish_time = models.DateTimeField()
-    score = models.IntegerField()
+    finish_time = models.DateTimeField(null=True)
+    score = models.IntegerField(null=True)
+    passed = models.BooleanField(null=True)
 
     def __str__(self):
         return str(self.user) + " => " + self.quiz.__str__()
