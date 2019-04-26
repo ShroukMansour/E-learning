@@ -41,7 +41,7 @@ class QuizSerializer(serializers.ModelSerializer):
 
     def create(self, validated_data):
         skill_type_data = validated_data.pop('skill_type')
-        skill_type_obj = SkillType.objects.create(**skill_type_data)
+        skill_type_obj = SkillType.objects.get_or_create(**skill_type_data)
         quiz = Quiz.objects.create(skill_type=skill_type_obj, **validated_data)
         return quiz
 
