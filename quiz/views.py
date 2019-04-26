@@ -70,7 +70,7 @@ class QuizInstances(APIView):
         try:
             quiz_instance = QuizInstance.objects.get(id=id)
         except QuizInstance.DoesNotExist:
-            return Response({"error": "Wrong Quiz ID."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "Wrong Quiz id."}, status=status.HTTP_400_BAD_REQUEST)
 
         if quiz_instance.marked:
             return Response({"error": "Quiz has already marked and saved."}, status=status.HTTP_400_BAD_REQUEST)
@@ -86,11 +86,15 @@ class QuizInstances(APIView):
         try:
             for answer in answers:
                 atemp = Answer.objects.get(id=answer['aid'])
-                if atemp.question.id == answer['qid'] and atemp.is_correct:
+
+                if atemp.question.id == answer['qid']:
+                    return Response({"error": "Answer doesn't match question."}, status=status.HTTP_400_BAD_REQUEST)
+
+                if atemp.is_correct:
                     score += 1
 
         except (Answer.DoesNotExist, KeyError):
-            return Response({"error": "Invalid Params."}, status=status.HTTP_400_BAD_REQUEST)
+            return Response({"error": "Invalid answer id."}, status=status.HTTP_400_BAD_REQUEST)
 
         expected_finish_time = quiz_instance.start_time + timedelta(minutes=quiz_instance.quiz.expected_duration)
 
