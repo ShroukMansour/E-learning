@@ -1,5 +1,7 @@
 language: python
 
+dist: xenial
+
 python:
 
   - "3.6"
@@ -16,8 +18,3 @@ script:
 
   - python3 manage.py test
 
-before_install:
-
-  - sudo apt-add-repository -y ppa:travis-ci/sqlite3
-  - sudo apt-get -y update
-  - sudo apt-get -y install sqlite3=3.8.3
