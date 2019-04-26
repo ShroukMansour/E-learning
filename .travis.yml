@@ -1,17 +1,17 @@
 language: python
 
-    python:
+python:
 
-      - "3.6"
+  - "3.6"
 
-    env:
+env:
 
-      -DJANGO=2.2
+  - DJANGO=2.2
 
-    install:
+install:
 
-      - pip install -r requirements.txt
+  - pip install -r requirements.txt
 
-    script:
+script:
 
-      - python3 manage.py test
+  - python3 manage.py test
