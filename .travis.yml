@@ -1,17 +1,20 @@
 language: python
 
-    python:
+dist: xenial
 
-      - "3.6"
+python:
 
-    env:
+  - "3.6"
 
-      -DJANGO=2.2
+env:
 
-    install:
+  - DJANGO=2.2
 
-      - pip install -r requirements.txt
+install:
 
-    script:
+  - pip install -r requirements.txt
 
-      - python3 manage.py test
+script:
+
+  - python3 manage.py test
+
