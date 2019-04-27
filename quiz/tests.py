@@ -23,7 +23,7 @@ class QuestionTest(APITestCase):
 
     def test_post_question_with_new_skill(self):
         url = '/questions/'
-        data = {'question_text': "what are the most famous type of inheritance",
+        data = {'question_text': "what are the most famous type of inheritance?",
                 'question_type': 'MCQ',
                 'score': 1,
                 'skill_type': {"name": "java"},
