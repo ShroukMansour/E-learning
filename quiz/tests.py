@@ -8,7 +8,7 @@ class QuestionTest(APITestCase):
     def test_post_valid_question(self):
         SkillType.objects.create(name='java')
         url = '/questions/'
-        data = {'question_text': "what are the most famous type of inheritance",
+        data = {'question_text': "what are the most famous type of inheritance?",
                 'question_type': 'MCQ',
                 'score': 1,
                 'skill_type': {"name": "java"},
