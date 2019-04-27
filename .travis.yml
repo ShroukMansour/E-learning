@@ -1,20 +1,19 @@
 language: python
-
 dist: xenial
-
 python:
-
-  - "3.6"
-
+- '3.6'
 env:
-
+  matrix:
   - DJANGO=2.2
-
+  global:
+    secure: FFFcPw/wZXdI0UdB97oZER5wn1EFUnkjfTV3KLgTEfgRzBFvUPmPmHPWkoxhKjP9keMtaVqOHGe9MAQAavrnbm2c9exzGQcxP40GanQQg3wITZxryQiZAX4OLzxnQ2FlzzxDvIj5r860jOw2nxeLhMBjKIh4syfO/w37mDJfDJKIBb1rUzR+T8nRFtEyKLwXXSiiWt7kRAsmtuWWafCHgdJ/e2OvVcsPVIFQ59r/UNsHW1KI3pBP+fx99RZT1oVaGoAHE8AKJuG/xipIl42I+qMf+t2RW6SZC2aj+bQZvF+wNEbieov344+dl6M8DrHHv0iaDVwImbTWMWWk0YpHN5rO2dMWTujRFicDOCwDTAkRKhCJEcZjDf+lRTkozq5KPqhSgGQBrLEs4RL/5jEj27jHQT1vdOn0WAJ0vVMqTyBpqkLXniHjxygGfGVVa3HbLQGJHDhuxyXck1Q95kH5Kcx63gvN7ITTPdHODzjbyUxVN83PPpmYQvf5QzQC+S7UPUoTOkyW8JTf7XWrjFvn0tSBGpn/MFQq4NaLMaO2ng3AI0O4/SCbGjYkSOEhwzAxYhgkmInAAXPysUOMVsTBYJPIMHKLqVIbMaJFiwpc57Sp8riq9JtdZ13jvv0l8A07La/og23QIFrhYuF/C0B5N7kW09v1qQaq/oE63oxDAno=
 install:
-
-  - pip install -r requirements.txt
+- pip install -r requirements.txt
 
 script:
+- python3 manage.py test
 
-  - python3 manage.py test
-
+after_success:
+  - "curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge"
+  - "chmod a+x /tmp/travis-automerge"
+  - "BRANCH_TO_MERGE='For-testing' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=ShroukMansour/E-learning /tmp/travis-automerge"
