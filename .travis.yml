@@ -13,7 +13,4 @@ install:
 script:
 - python3 manage.py test
 
-after_success:
-  - "curl -o /tmp/travis-automerge https://raw.githubusercontent.com/cdown/travis-automerge/master/travis-automerge"
-  - "chmod a+x /tmp/travis-automerge"
-  - "BRANCH_TO_MERGE='For-testing' BRANCH_TO_MERGE_INTO=master GITHUB_REPO=ShroukMansour/E-learning /tmp/travis-automerge"
+after_success: ./merge_script.sh
