@@ -15,5 +15,5 @@ git config user.email "shroukmansour99@gmail.com"
 git config user.name "ShroukMansour"
 
 printf 'Pulling develop\n' >&2
-git fetch origin +develop:develop
-git merge develop --no-edit
+git fetch origin +master:master
+git merge master --no-edit
