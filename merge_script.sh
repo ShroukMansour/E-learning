@@ -1,8 +1,8 @@
 #!/bin/bash -e
 
 
-export GIT_COMMITTER_EMAIL='shroukmansour99@gmail.com'
-export GIT_COMMITTER_NAME='ShroukMansour'
+export GIT_COMMITTER_EMAIL='travis@travis'
+export GIT_COMMITTER_NAME='Travis CI'
 
 printf 'Removing staging branch as it has been handled already\n'
 printf 'git push %s :staging >/dev/null 2>&1\n' "ShroukMansour/E-learning"
