@@ -2,8 +2,8 @@
 
 
 
-export GIT_COMMITTER_EMAIL='travis@travis'
-export GIT_COMMITTER_NAME='Travis CI'
+export GIT_COMMITTER_EMAIL='shroukmansour99@gmail.com'
+export GIT_COMMITTER_NAME='ShroukMansour'
 
 printf 'Removing staging branch as it has been handled already\n'
 printf 'git push %s :staging >/dev/null 2>&1\n' "ShroukMansour/E-learning"
@@ -17,6 +17,6 @@ git checkout staging
 git config user.email "shroukmansour99@gmail.com"
 git config user.name "ShroukMansour"
 
-printf 'Pulling develop\n' >&2
+printf 'Pulling mSTER\n' >&2
 git fetch origin +master:master
 git merge master --no-edit
