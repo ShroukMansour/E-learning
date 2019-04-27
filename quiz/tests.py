@@ -36,6 +36,7 @@ class QuestionTest(APITestCase):
         self.assertEqual(Question.objects.count(), 1)
         self.assertEqual(Question.objects.get().question_text, "what are the most famous type of inheritance?")
 
+
     def test_post_question_with_multiple_correct_answer(self):
         SkillType.objects.create(name='java')
         url = '/questions/'
