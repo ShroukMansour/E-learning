@@ -5,18 +5,15 @@
 export GIT_COMMITTER_EMAIL='shroukmansour99@gmail.com'
 export GIT_COMMITTER_NAME='ShroukMansour'
 
-printf 'Removing staging branch as it has been handled already\n'
-printf 'git push %s :staging >/dev/null 2>&1\n' "ShroukMansour/E-learning"
-push_uri="https://b535aecee130bd3bac42ea289baa5b3453f88c00@github.com/ShroukMansour/E-learning.git"
-git push "$push_uri" :staging >/dev/null 2>&1
+printf 'before first git command\n'
+git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
+git fetch --all || exit
 
-printf 'push done'
+printf '\nbefore first git command'
+git checkout master || exit
+git merge --no-ff "travis commit" || exit
 
-# Preparing for merge
-git checkout staging
-git config user.email "shroukmansour99@gmail.com"
-git config user.name "ShroukMansour"
+printf 'before push\n'
+git push @github.com/">https://b535aecee130bd3bac42ea289baa5b3453f88c00@github.com/ShroukMansour/E-learning.git"
 
-printf 'Pulling mSTER\n' >&2
-git fetch origin +master:master
-git merge master --no-edit
+printf 'after push\n'
