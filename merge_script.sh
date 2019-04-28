@@ -14,6 +14,6 @@ git checkout master || exit
 git merge --no-ff origin/For-testing || exit
 
 printf '3>>>>>>>>>\n'
-git push "https://b535aecee130bd3bac42ea289baa5b3453f88c00@github.com/ShroukMansour/E-learning.git"
+git push @github.com/"https://b535aecee130bd3bac42ea289baa5b3453f88c00@github.com/ShroukMansour/E-learning.git"
 
 printf '4>>>>>>>>>>>>n'
