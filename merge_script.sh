@@ -10,8 +10,8 @@ git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
 git fetch --all || exit
 
 printf '\nb2>>>>>>>>>>>>>>'
-git checkout For-testing || exit
-git merge --no-ff "travis commit" || exit
+git checkout master || exit
+git merge --no-ff For-testing || exit
 
 printf '3>>>>>>>>>\n'
 git push @github.com/">https://b535aecee130bd3bac42ea289baa5b3453f88c00@github.com/ShroukMansour/E-learning.git"
