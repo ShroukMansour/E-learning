@@ -5,13 +5,16 @@ from rest_framework import serializers
 class SkillTypeSerializer(serializers.ModelSerializer):
     class Meta:
         model = SkillType
-        fields = ['name']
+        fields = ['id', 'name']
 
 
 class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
         fields = ['id', 'answer_text', 'is_correct']
+        extra_kwargs = {
+            'is_correct': {'write_only': True},
+        }
 
 
 class QuestionSerializer(serializers.ModelSerializer):

@@ -134,12 +134,37 @@ class GetVacancyTest(APITestCase):
         self.assertEqual(len(response.data), 2)
 
     def test_get_quiz_by_id(self):
+        data = {"company_id": 1,
+                "title": "software architect",
+                "description": "Design programs",
+                "requirements": "problem solving skills",
+                "benefits": "transportation covered",
+                "salary": 2000,
+                "job_type": "Full Time",
+                "interest_field": {
+                    "id": 1,
+                    "name": "java"
+                },
+                "vacancy_questions": [
+                    {
+                        "question_text": "How old are you",
+                        "question_choices": [
+                            {
+                                "choice_text": "20"
+                            },
+                            {
+                                "choice_text": "30"
+                            }
+                        ]
+                    }
+                ]
+                }
         url = '/vacancies/2/'
         response = self.client.get(url, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         json_response = json.loads(response.content)
         json_response.pop('id')
-        self.assertEqual(json_response, self.data)
+        self.assertEqual(json_response, data)
 
     def test_get_non_existent_quiz(self):
         url = '/vacancies/10/'
