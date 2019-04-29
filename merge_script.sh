@@ -4,19 +4,17 @@
 
 export GIT_COMMITTER_EMAIL='shroukmansour99@gmail.com'
 export GIT_COMMITTER_NAME='ShroukMansour'
+export GIT_COMMITTER_PASSWORD='da75664bca798621d5a3b8398d44465a7ee2c06f'
 
-printf 'Removing staging branch as it has been handled already\n'
-printf 'git push %s :staging >/dev/null 2>&1\n' "ShroukMansour/E-learning"
-push_uri="https://b535aecee130bd3bac42ea289baa5b3453f88c00@github.com/ShroukMansour/E-learning.git"
-git push "$push_uri" :staging >/dev/null 2>&1
+printf '1>>>>>>>>>>>>>.\n'
+git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* || exit
+git fetch --all || exit
 
-printf 'push done'
+printf '\nb2>>>>>>>>>>>>>>'
+git checkout master || exit
+git merge --no-ff origin/For-testing || exit
 
-# Preparing for merge
-git checkout staging
-git config user.email "shroukmansour99@gmail.com"
-git config user.name "ShroukMansour"
+printf '3>>>>>>>>>\n'
+git push https://da75664bca798621d5a3b8398d44465a7ee2c06f@github.com/ShroukMansour/E-learning.git
 
-printf 'Pulling mSTER\n' >&2
-git fetch origin +master:master
-git merge master --no-edit
+printf '4>>>>>>>>>>>>n'
