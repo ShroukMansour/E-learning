@@ -22,12 +22,12 @@ class Vacancy(models.Model):
     title = models.CharField(max_length=200)
     description = models.CharField(max_length=2000, default='Vacancy description')
     requirements = models.CharField(max_length=10000, default='Vacancy requirments')
-    benefits = models.CharField(max_length=500)
-    salary = models.IntegerField(default=1000)
+    benefits = models.CharField(max_length=500, default="benefits")
+    salary = models.IntegerField(default=0)
     job_types = (('Full Time', 'Full Time'), ("Part Time", "Part Time"), ("Intern", "Intern"))
-    # job_type = models.OneToOneField(JobType, on_delete=models.CASCADE)
-    job_type = models.CharField(max_length=15, choices=job_types)
-    interest_field = models.CharField(max_length=200)
+    job_type = models.ForeignKey(JobType, on_delete=models.CASCADE)
+    # job_type = models.CharField(max_length=15, choices=job_types)
+    interest_field = models.ForeignKey(SkillType, on_delete=models.CASCADE)
 
 
 class VacancyQuestion(models.Model):
@@ -42,7 +42,7 @@ class Choice(models.Model):
     class Meta:
         unique_together = (('choice_text', 'question'),)
 
-    choice_text = models.CharField(max_length=200, primary_key=True)
+    choice_text = models.CharField(max_length=200)
     question = models.ForeignKey(VacancyQuestion, on_delete=models.CASCADE, related_name='question_choices')
 
 

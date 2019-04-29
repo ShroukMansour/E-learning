@@ -216,13 +216,13 @@ class GetQuizTest(APITestCase):
 
     def test_get_quiz_successfully_by_skill(self):
         url = '/quizzes/'
-        response = self.client.get(url,data={"skillType": "java"}, format='json')
+        response = self.client.get(url, data={"skillType": "java"}, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 2)
 
     def test_get_quiz_by_nonexistent_skill(self):
         url = '/quizzes/'
-        response = self.client.get(url,data={"skillType": "python"}, format='json')
+        response = self.client.get(url, data={"skillType": "python"}, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 0)
 
@@ -230,7 +230,7 @@ class GetQuizTest(APITestCase):
         self.create_question("python question", "python")
         self.create_quiz("python quiz", "python")
         url = '/quizzes/'
-        response = self.client.get(url,data={"skillType": ["python", "java"]}, format='json')
+        response = self.client.get(url, data={"skillType": ["python", "java"]}, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 3)
 
@@ -238,7 +238,119 @@ class GetQuizTest(APITestCase):
         self.create_question("python question", "python")
         self.create_quiz("python quiz", "python")
         url = '/quizzes/'
-        response = self.client.get(url,data={"skillType": ["python", "matlab"]}, format='json')
+        response = self.client.get(url, data={"skillType": ["python", "matlab"]}, format='json')
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 1)
 
+
+class TakeQuizTest(APITestCase):
+    def create_question(self, title, skill):
+        url = '/questions/'
+        data = {'question_text': title,
+                'question_type': 'MCQ',
+                'score': 1,
+                'skill_type': {"name": skill},
+                'answers': [{"answer_text": 'public', "is_correct": True},
+                            {"answer_text": 'private'},
+                            {"answer_text": 'protected'}]
+                }
+        self.client.post(url, data=data, format='json')
+
+    def create_quiz(self, title, skill):
+        url = '/quizzes/'
+        data = {'title': title,
+                'pass_score': 5,
+                'num_of_questions': 3,
+                'expected_duration': 10,
+                'skill_type': {"name": skill},
+                }
+        response = self.client.post(url, data=data, format='json')
+
+    def setUp(self):
+        self.create_question("what's the most popular inheritance in java?", "java")
+        self.create_question("what's the most popular inheritance in python?", "java")
+        self.create_question("what's the most popular inheritance in matlab?", "java")
+        self.create_quiz("superheroes quiz", "java")
+
+    def test_take_quiz_successfully(self):
+        url = '/quiz/takeQuiz/1'
+        data = {'id': 1,
+                'question_text': "what's the most popular inheritance in java?",
+                'question_type': 'MCQ',
+                'score': 1,
+                'skill_type': {"name": "java"},
+                'answers': [{'id': 1, "answer_text": 'public'},
+                            {'id': 2, "answer_text": 'private'},
+                            {'id': 3, "answer_text": 'protected'}]
+                }
+        response = self.client.get(url, data={'uid': 1}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(response.data['id'], 1)
+        self.assertEqual(len(response.data['questions']), 3)
+        json_response = json.loads(response.content)
+        json_response = json_response['questions'][0]
+        self.assertEqual(json_response, data)
+
+    def test_take_quiz_with_invalid_id(self):
+        url = '/quiz/takeQuiz/10'
+        response = self.client.get(url, data={'uid': 1}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+# class SubmitQuizTest(APITestCase):
+#     def create_question(self, title, skill):
+#         url = '/questions/'
+#         data = {'question_text': title,
+#                 'question_type': 'MCQ',
+#                 'score': 1,
+#                 'skill_type': {"name": skill},
+#                 'answers': [{"answer_text": 'public', "is_correct": True},
+#                             {"answer_text": 'private'},
+#                             {"answer_text": 'protected'}]
+#                 }
+#         self.client.post(url, data=data, format='json')
+#
+#     def create_quiz(self, title, skill):
+#         url = '/quizzes/'
+#         data = {'title': title,
+#                 'pass_score': 5,
+#                 'num_of_questions': 3,
+#                 'expected_duration': 10,
+#                 'skill_type': {"name": skill},
+#                 }
+#         response = self.client.post(url, data=data, format='json')
+#
+#     def take_quiz(self):
+#         url = '/quiz/takeQuiz/10'
+#         response = self.client.get(url, data={'uid': 1}, format='json')
+#         self.quiz_instance_id = response.data['id']
+#
+#     def setUp(self):
+#         self.create_question("what's the most popular inheritance in java?", "java")
+#         self.create_question("what's the most popular inheritance in python?", "java")
+#         self.create_question("what's the most popular inheritance in matlab?", "java")
+#         self.create_quiz("superheroes quiz", "java")
+#         self.take_quiz()
+#
+#     def test_take_quiz_successfully(self):
+#         url = '/quiz/takeQuiz/1'
+#         data = {'id': 1,
+#                 'question_text': "what's the most popular inheritance in java?",
+#                 'question_type': 'MCQ',
+#                 'score': 1,
+#                 'skill_type': {"name": "java"},
+#                 'answers': [{'id': 1, "answer_text": 'public'},
+#                             {'id': 2, "answer_text": 'private'},
+#                             {'id': 3, "answer_text": 'protected'}]
+#                 }
+#         response = self.client.get(url, data={'uid': 1}, format='json')
+#         self.assertEqual(response.status_code, status.HTTP_200_OK)
+#         self.assertEqual(response.data['id'], 1)
+#         self.assertEqual(len(response.data['questions']), 3)
+#         json_response = json.loads(response.content)
+#         json_response = json_response['questions'][0]
+#         self.assertEqual(json_response, data)
+#
+#     def test_take_quiz_with_invalid_id(self):
+#         url = '/quiz/takeQuiz/10'
+#         response = self.client.get(url, data={'uid': 1}, format='json')
+#         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
