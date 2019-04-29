@@ -1,173 +1,256 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c54b7bb-02ee-4702-ae69-80c28582c17d" name="Default Changelist" comment="test auto merge">
+    <list default="true" id="8c54b7bb-02ee-4702-ae69-80c28582c17d" name="Default Changelist" comment="add post get">
       <change beforePath="$PROJECT_DIR$/.idea/E-learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/E-learning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/@plugins_snapshot.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/_ast.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/_ast.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/_importlib_modulespec.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/_importlib_modulespec.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/abc.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/abc.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/ast.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/ast.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/builtins.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/builtins.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/codecs.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/codecs.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/collections/__init__.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/collections/__init__.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/collections/abc.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/collections/abc.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/importlib/__init__.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/importlib/__init__.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/importlib/abc.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/importlib/abc.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/io.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/io.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/mmap.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/mmap.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/os/__init__.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/os/__init__.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/os/path.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/os/path.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/posix.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/posix.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/quiz/__init__.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/quiz/__init__.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/quiz/models.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/quiz/models.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/quiz/tests.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/quiz/tests.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/sys.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/sys.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/types.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/types.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/typing.data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mypy_cache/3.5/typing.meta.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker_commands.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docker_commands.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/merge_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/merge_script.sh" afterDir="false" />
     </list>
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_multiple_correct_answer.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_multiple_correct_answer Coverage Results" MODIFIED="1556277895014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_valid_question.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_valid_question Coverage Results" MODIFIED="1556555065378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_PostQuizTest.coverage" NAME="Test: quiz.tests.PostQuizTest Coverage Results" MODIFIED="1556285737578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_all_quizzes_successfully.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_all_quizzes_successfully Coverage Results" MODIFIED="1556290853680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest.coverage" NAME="Test: quiz.tests.SubmitQuizTest Coverage Results" MODIFIED="1556553370090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest.coverage" NAME="Test: quiz.tests.TakeQuizTest Coverage Results" MODIFIED="1556552736099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_same_choices_names.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_same_choices_names Coverage Results" MODIFIED="1556278697816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_req_parameters_only.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_req_parameters_only Coverage Results" MODIFIED="1556278931680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest_test_take_quiz_successfully.coverage" NAME="Test: quiz.tests.TakeQuizTest.test_take_quiz_successfully Coverage Results" MODIFIED="1556552727360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest.coverage" NAME="Test: quiz.tests.GetQuizTest Coverage Results" MODIFIED="1556363599667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_test_test_serializers.coverage" NAME="Test: company.tests.test.test_serializers Coverage Results" MODIFIED="1556475565373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id.coverage" NAME="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id Coverage Results" MODIFIED="1556556002127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_questionTest_test_post_valid_question.coverage" NAME="Test: quiz.tests.questionTest.test_post_valid_question Coverage Results" MODIFIED="1556269983534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_non_existent_quiz.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_non_existent_quiz Coverage Results" MODIFIED="1556351232924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests.coverage" NAME="Test: company.tests Coverage Results" MODIFIED="1556556123806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_PostQuizTest_test_post_quiz_with_invalid_pass_score.coverage" NAME="Test: quiz.tests.PostQuizTest.test_post_quiz_with_invalid_pass_score Coverage Results" MODIFIED="1556292489370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_same_choices_for_different_questions.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_same_choices_for_different_questions Coverage Results" MODIFIED="1556485069517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_without_answers.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_without_answers Coverage Results" MODIFIED="1556279045958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill_list.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill_list Coverage Results" MODIFIED="1556352215776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_GetVacancyTest.coverage" NAME="Test: company.tests.GetVacancyTest Coverage Results" MODIFIED="1556529321623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_nonexistent_skill.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_nonexistent_skill Coverage Results" MODIFIED="1556352006059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_PostQuizTest_test_post_valid_quiz.coverage" NAME="Test: quiz.tests.PostQuizTest.test_post_valid_quiz Coverage Results" MODIFIED="1556286833874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill Coverage Results" MODIFIED="1556351955659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_new_skill.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_new_skill Coverage Results" MODIFIED="1556286931312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_id.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_id Coverage Results" MODIFIED="1556292359211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_vacancy_with_same_choices_in_same_question.coverage" NAME="Test: company.tests.PostVacancyTest.test_vacancy_with_same_choices_in_same_question Coverage Results" MODIFIED="1556528779686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_non_existent_interest.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_non_existent_interest Coverage Results" MODIFIED="1556483853668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_valid_vacancy.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_valid_vacancy Coverage Results" MODIFIED="1556483785678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest_test_take_quiz_with_invalid_id.coverage" NAME="Test: quiz.tests.TakeQuizTest.test_take_quiz_with_invalid_id Coverage Results" MODIFIED="1556552766633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_invalid_job_type.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_invalid_job_type Coverage Results" MODIFIED="1556483957434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_same_choices.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_same_choices Coverage Results" MODIFIED="1556484872617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests.coverage" NAME="Test: quiz.tests Coverage Results" MODIFIED="1556556033435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_questionTest.coverage" NAME="Test: quiz.tests.questionTest Coverage Results" MODIFIED="1556272242513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill_list_2.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill_list_2 Coverage Results" MODIFIED="1556352255306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest.coverage" NAME="Test: quiz.tests.QuestionTest Coverage Results" MODIFIED="1556272259773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest_test_submit_quiz_successfully.coverage" NAME="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully Coverage Results" MODIFIED="1556555111229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="90513b60:SqliteImplModel$Schema" />
+        <item name="company_choice: table" type="ffe0bd85:SqliteImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/merge_script.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quiz/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="36" column="108" lean-forward="true" selection-start-line="36" selection-start-column="108" selection-end-line="36" selection-end-column="108" />
+            <state relative-caret-position="122">
+              <caret line="353" column="25" selection-start-line="353" selection-start-column="25" selection-end-line="353" selection-end-column="25" />
               <folding>
-                <element signature="e#0#43#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#11043#11480#0" />
+                <element signature="e#11531#11825#0" />
+                <element signature="e#13875#14169#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/merge_token">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state relative-caret-position="220">
+              <caret line="10" column="38" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="66">
+              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docker_commands.txt">
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/company/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="197">
+              <caret line="12" selection-start-line="9" selection-start-column="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project/settings.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/company/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+            <state relative-caret-position="91">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="157">
+              <caret line="74" column="114" selection-start-line="74" selection-start-column="114" selection-end-line="74" selection-end-column="114" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuizManipulator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/Classes/QuizManipulator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#181#185#0" />
+                <element signature="e#237#241#0" />
+                <element signature="e#297#301#0" />
+                <element signature="e#363#367#0" />
+                <element signature="e#426#430#0" />
+                <element signature="e#484#488#0" />
+                <element signature="e#554#1081#0" />
+                <element signature="e#1147#1450#0" />
+                <element signature="e#1510#1960#0" />
+                <element signature="e#2061#2278#0" />
+                <element signature="e#2337#2437#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/quiz/serializers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="155">
+              <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+              <folding>
+                <element signature="e#0#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>questionTest</find>
+      <find>skill type with this name already exists</find>
+      <find>skill</find>
+      <find>WrongQuizId</find>
+      <find>quiz_instance_id</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response83.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Project/settings.py" />
+        <option value="$PROJECT_DIR$/Project/urls.py" />
+        <option value="$PROJECT_DIR$/quiz/apps.py" />
+        <option value="$PROJECT_DIR$/company/apps.py" />
+        <option value="$PROJECT_DIR$/company/migrations/0003_auto_20190428_2116.py" />
+        <option value="$PROJECT_DIR$/quiz/models.py" />
+        <option value="$PROJECT_DIR$/company/serializers.py" />
+        <option value="$PROJECT_DIR$/company/models.py" />
+        <option value="$PROJECT_DIR$/company/tests.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.travis.yml" />
-        <option value="$PROJECT_DIR$/merge_token" />
-        <option value="$PROJECT_DIR$/docker_commands.txt" />
+        <option value="$PROJECT_DIR$/quiz/Classes/QuizManipulator.py" />
+        <option value="$PROJECT_DIR$/quiz/serializers.py" />
         <option value="$PROJECT_DIR$/quiz/tests.py" />
-        <option value="$PROJECT_DIR$/merge_script.sh" />
+        <option value="$PROJECT_DIR$/quiz/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="698" />
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="9" />
+    <option name="y" value="19" />
+    <option name="width" value="1347" />
+    <option name="height" value="699" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -178,8 +261,29 @@
         <subPane>
           <expand>
             <path>
-              <item name="E-learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E-learning" type="462c0819:PsiDirectoryNode" />
+              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
+              <item name="company" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
+              <item name="Project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
+              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
+              <item name="quiz" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -188,15 +292,439 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Docker" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/vacancies/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;company_id&quot;: 1,                 &quot;title&quot;: &quot;Software Engineer&quot;,                 &quot;description&quot;: &quot;Design programs&quot;,                 &quot;requirements&quot;: &quot;problem solving skills&quot;,                 &quot;benefits&quot;: &quot;transportation covered&quot;,                 &quot;salary&quot;: 2000,                 &quot;job_type&quot;: &quot;Full Time&quot;,                 &quot;interest_field&quot;: {&quot;name&quot;: &quot;java&quot;},                 &quot;vacancy_questions&quot;: [                     {&quot;question_text&quot;: &quot;How old are you&quot;,                      &quot;question_choices&quot;: [                          {&quot;choice_text&quot;: &quot;20&quot;},                          {&quot;choice_text&quot;: &quot;30&quot;}                      ]                      }]                 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/vacancies/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;company_id&quot;: 1,                 &quot;title&quot;: &quot;Software Engineer&quot;,                 &quot;description&quot;: &quot;Design programs&quot;,                 &quot;requirements&quot;: &quot;problem solving skills&quot;,                 &quot;benefits&quot;: &quot;transportation covered&quot;,                 &quot;salary&quot;: 2000,                 &quot;job_type&quot;: &quot;Full Time&quot;,                 &quot;interest&quot;: {&quot;name&quot;: &quot;java&quot;},                 &quot;vacancy_questions&quot;: [                     {&quot;question_text&quot;: &quot;How old are you&quot;,                      &quot;question_choices&quot;: [                          {&quot;choice_text&quot;: &quot;20&quot;},                          {&quot;choice_text&quot;: &quot;30&quot;}                      ]                      }]                 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/vacancies/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;company_id&quot;: 1,                 &quot;title&quot;: &quot;Software Engineer&quot;,                 &quot;description&quot;: &quot;Design programs&quot;,                 &quot;requirements&quot;: &quot;problem solving skills&quot;,                 &quot;benefits&quot;: &quot;transportation covered&quot;,                 &quot;salary&quot;: 2000,                 &quot;job_type&quot;: {&quot;name&quot;: &quot;Full Time&quot;},                 &quot;interest&quot;: {&quot;name&quot;: &quot;java&quot;},                 &quot;vacancy_questions&quot;: [                     {&quot;question_text&quot;: &quot;How old are you&quot;,                      &quot;question_choices&quot;: [                          {&quot;choice_text&quot;: &quot;20&quot;},                          {&quot;choice_text&quot;: &quot;30&quot;}                      ]                      }]                 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/vacancies/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;company_id&quot;: 1,                 &quot;title&quot;: 'Software Engineer',                 'description': &quot;Design programs&quot;,                 'requirements': &quot;problem solving skills&quot;,                 'benefits': &quot;transportation covered&quot;,                 'salary': 2000,                 'job_type': {&quot;name&quot;: &quot;Full Time&quot;},                 'interest': {&quot;name&quot;: &quot;java&quot;},                 'vacancy_questions': [                     {&quot;question_text&quot;: &quot;How old are you&quot;,                      &quot;question_choices&quot;: [                          {&quot;choice_text&quot;: &quot;20&quot;},                          {&quot;choice_text&quot;: &quot;30&quot;}                      ]                      }]                 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/vacancies/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;company_id&quot;: 1,                 'title': 'Software Engineer',                 'description': &quot;Design programs&quot;,                 'requirements': &quot;problem solving skills&quot;,                 'benefits': &quot;transportation covered&quot;,                 'salary': 2000,                 'job_type': {&quot;name&quot;: &quot;Full Time&quot;},                 'interest': {&quot;name&quot;: &quot;java&quot;},                 'vacancy_questions': [                     {&quot;question_text&quot;: &quot;How old are you&quot;,                      &quot;question_choices&quot;: [                          {&quot;choice_text&quot;: &quot;20&quot;},                          {&quot;choice_text&quot;: &quot;30&quot;}                      ]                      }]                 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/vacancies/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{'company_id': 1,                 'title': 'Software Engineer',                 'description': &quot;Design programs&quot;,                 'requirements': &quot;problem solving skills&quot;,                 'benefits': &quot;transportation covered&quot;,                 'salary': 2000,                 'job_type': {&quot;name&quot;: &quot;Full Time&quot;},                 'interest': {&quot;name&quot;: &quot;java&quot;},                 'vacancy_questions': [                     {&quot;question_text&quot;: &quot;How old are you&quot;,                      &quot;question_choices&quot;: [                          {&quot;choice_text&quot;: &quot;20&quot;},                          {&quot;choice_text&quot;: &quot;30&quot;}                      ]                      }]                 }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/questions/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{         &quot;question_text&quot;: &quot;Where is Python?&quot;,         &quot;question_type&quot;: &quot;MCQ&quot;,         &quot;score&quot;: 1,         &quot;skill_type&quot;: {             &quot;name&quot;: &quot;Python&quot;         },         &quot;answers&quot;: [{&quot;answer_text&quot;:&quot;hello&quot;, &quot;is_correct&quot;:true}]}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/questions/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{         &quot;question_text&quot;: &quot;Where is Python?&quot;,         &quot;question_type&quot;: &quot;MCQ&quot;,         &quot;score&quot;: 1,         &quot;skill_type&quot;: {             &quot;name&quot;: &quot;Python&quot;         },         &quot;answers&quot;: [{&quot;answer_text&quot;:&quot;hello&quot;, &quot;is_correct&quot;:false}]}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/questions/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{         &quot;question_text&quot;: &quot;Where is Python?&quot;,         &quot;question_type&quot;: &quot;MCQ&quot;,         &quot;score&quot;: 1,         &quot;skill_type&quot;: {             &quot;name&quot;: &quot;Python&quot;         },         &quot;answers&quot;: [&quot;hello&quot;], &quot;correct_answer&quot;: &quot;hello&quot;     }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/questions/" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{         &quot;question_text&quot;: &quot;Where is Python?&quot;,         &quot;question_type&quot;: &quot;MCQ&quot;,         &quot;score&quot;: 1,         &quot;skill_type&quot;: {             &quot;name&quot;: &quot;Python&quot;         },         &quot;answers&quot;: []     }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/questions" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{         &quot;question_text&quot;: &quot;Where is Python?&quot;,         &quot;question_type&quot;: &quot;MCQ&quot;,         &quot;score&quot;: 1,         &quot;skill_type&quot;: {             &quot;name&quot;: &quot;Python&quot;         },         &quot;answers&quot;: []     }" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/E-learning.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.travis.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/docker_commands.txt</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/quiz/serializers.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/quiz/urls.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/quiz/views.py</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/merge_script.sh</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/quiz/Classes/QuizManipulator.py</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/@plugins_snapshot.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/Project/__init__.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/Project/__init__.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/Project/urls.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/Project/urls.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_ast.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_ast.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_importlib_modulespec.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_importlib_modulespec.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_random.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_random.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/abc.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/abc.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/ast.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/ast.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/builtins.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/builtins.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/codecs.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/codecs.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/collections/__init__.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/collections/__init__.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/collections/abc.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/collections/abc.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/datetime.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/datetime.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/importlib/__init__.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/importlib/__init__.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/importlib/abc.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/importlib/abc.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/io.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/io.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/mmap.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/mmap.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/os/__init__.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/os/__init__.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/os/path.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/os/path.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/posix.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/posix.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/__init__.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/__init__.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/admin.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/admin.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/apps.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/apps.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/migrations/0002_auto_20190318_1155.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/migrations/0002_auto_20190318_1155.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/migrations/__init__.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/migrations/__init__.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/models.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/models.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/serializers.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/serializers.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/tests.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/tests.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/urls.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/urls.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/views.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/views.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/random.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/random.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/sys.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/sys.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/time.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/time.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/types.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/types.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/typing.data.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/typing.meta.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.vscode/settings.json</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,7 +738,102 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Django tests.Test: company.tests">
+    <configuration name="Test: company.tests" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="E-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="company.tests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Test: quiz.tests" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="E-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="quiz.tests" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Test: quiz.tests.QuestionTest.test_post_valid_question" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="E-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="quiz.tests.QuestionTest.test_post_valid_question" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="E-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="quiz.tests.SubmitQuizTest.test_submit_quiz_successfully" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
+    <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+      <module name="E-learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+    </configuration>
     <configuration name="E-learning" type="Python.DjangoServer" factoryName="Django server">
       <module name="E-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -233,8 +856,24 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
-      <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Django server.E-learning" />
+      <item itemvalue="Django tests.Test: quiz.tests" />
+      <item itemvalue="Django tests.Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully" />
+      <item itemvalue="Django tests.Test: quiz.tests.QuestionTest.test_post_valid_question" />
+      <item itemvalue="Django tests.Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" />
+      <item itemvalue="Django tests.Test: company.tests" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Django tests.Test: company.tests" />
+        <item itemvalue="Django tests.Test: quiz.tests" />
+        <item itemvalue="Django tests.Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" />
+        <item itemvalue="Django tests.Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully" />
+        <item itemvalue="Django tests.Test: quiz.tests.QuestionTest.test_post_valid_question" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -247,280 +886,595 @@
       <option name="presentableId" value="Default" />
       <updated>1554993768941</updated>
       <workItem from="1554993772287" duration="599000" />
-      <workItem from="1555500131180" duration="35000" />
-      <workItem from="1555500171128" duration="122000" />
-      <workItem from="1556357906799" duration="1766000" />
-      <workItem from="1556366213298" duration="9630000" />
-      <workItem from="1556384963298" duration="5629000" />
-      <workItem from="1556458138955" duration="4342000" />
     </task>
-    <task id="LOCAL-00001" summary="test travis">
-      <created>1556283898761</created>
+    <task id="LOCAL-00001" summary="modify correct answer field in question &#10;+&#10;add 3 question test cases">
+      <created>1556278446217</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1556283898761</updated>
+      <updated>1556278446217</updated>
     </task>
-    <task id="LOCAL-00002" summary="test travis again">
-      <created>1556284173822</created>
+    <task id="LOCAL-00002" summary="Edit quiz defaults">
+      <created>1556284643272</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1556284173822</updated>
+      <updated>1556284643272</updated>
     </task>
-    <task id="LOCAL-00003" summary="reformat travis.yml file">
-      <created>1556302726323</created>
+    <task id="LOCAL-00003" summary="add post and get quiz tests">
+      <created>1556363710493</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1556302726324</updated>
+      <updated>1556363710493</updated>
     </task>
-    <task id="LOCAL-00004" summary="add sqlite dependency">
-      <created>1556304134532</created>
+    <task id="LOCAL-00004" summary="add company tests and some quiz tests">
+      <created>1556550986976</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1556304134532</updated>
+      <updated>1556550986976</updated>
     </task>
-    <task id="LOCAL-00005" summary="add dist xenial to travis">
-      <created>1556305678594</created>
+    <task id="LOCAL-00005" summary="add submit quiz tests + fix some errors">
+      <created>1556555875296</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1556305678594</updated>
+      <updated>1556555875296</updated>
     </task>
-    <task id="LOCAL-00006" summary="add dist xenial to travis(2)">
-      <created>1556305958049</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1556305958049</updated>
-    </task>
-    <task id="LOCAL-00007" summary="fix error is_correct">
-      <created>1556358970270</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1556358970270</updated>
-    </task>
-    <task id="LOCAL-00008" summary="auto merge from travis">
-      <created>1556369221141</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1556369221141</updated>
-    </task>
-    <task id="LOCAL-00009" summary="test auto merge">
-      <created>1556369474759</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1556369474759</updated>
-    </task>
-    <task id="LOCAL-00010" summary="make test fail">
-      <created>1556372796074</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1556372796074</updated>
-    </task>
-    <task id="LOCAL-00011" summary="test auto merge success">
-      <created>1556373640854</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1556373640854</updated>
-    </task>
-    <task id="LOCAL-00012" summary="test auto merge2">
-      <created>1556373759414</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1556373759414</updated>
-    </task>
-    <task id="LOCAL-00013" summary="test auto merge to docker">
-      <created>1556374779580</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1556374779580</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added merge script">
-      <created>1556385652237</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1556385652237</updated>
-    </task>
-    <task id="LOCAL-00015" summary="updated merge script">
-      <created>1556385855613</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1556385855613</updated>
-    </task>
-    <task id="LOCAL-00016" summary="upated build.sh">
-      <created>1556386744751</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1556386744751</updated>
-    </task>
-    <task id="LOCAL-00017" summary="test auto merge agaaaain">
-      <created>1556387062344</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1556387062344</updated>
-    </task>
-    <task id="LOCAL-00018" summary="updated buils.sh">
-      <created>1556387744624</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1556387744624</updated>
-    </task>
-    <task id="LOCAL-00019" summary="testttttttttttttttttttttttt">
-      <created>1556388533503</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1556388533503</updated>
-    </task>
-    <task id="LOCAL-00020" summary="test auto merge">
-      <created>1556464501666</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1556464501666</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Test__quiz_tests_QuestionTest_test_post_valid_question - 2019.04.29 at 18h 23m 31s.xml">
+      <configuration name="Test: quiz.tests.QuestionTest.test_post_valid_question" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_QuestionTest_test_post_valid_question - 2019.04.29 at 18h 24m 28s.xml">
+      <configuration name="Test: quiz.tests.QuestionTest.test_post_valid_question" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_SubmitQuizTest_test_submit_quiz_successfully - 2019.04.29 at 18h 24m 41s.xml">
+      <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_SubmitQuizTest_test_submit_quiz_successfully - 2019.04.29 at 18h 25m 13s.xml">
+      <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id - 2019.04.29 at 18h 32m 56s.xml">
+      <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id - 2019.04.29 at 18h 33m 23s.xml">
+      <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id - 2019.04.29 at 18h 33m 45s.xml">
+      <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id - 2019.04.29 at 18h 33m 53s.xml">
+      <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id - 2019.04.29 at 18h 35m 24s.xml">
+      <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+    <history-entry file="Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id - 2019.04.29 at 18h 40m 04s.xml">
+      <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" configurationId="DjangoTestsConfigurationType" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28863000" />
+    <option name="totallyTimeSpent" value="599000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29083666" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003903" side_tool="true" weight="0.32993197" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="right" x="3" y="248" width="1281" height="245" id="REST Client" order="6" weight="0.49960968" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49960968" weight="0.32993197" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32993197" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49960968" visible="true" weight="0.40646258" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32943013" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.4727891" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2490242" />
+      <window_info anchor="bottom" id="Docker" order="13" weight="0.32993197" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32943013" />
+      <window_info anchor="right" id="SciView" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32868218" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003984" side_tool="true" weight="0.32868218" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.4996016" visible="true" weight="0.32868218" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32868218" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="R Graphics" order="5" />
-      <window_info anchor="right" id="R Packages" order="6" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39965987" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32993197" />
+      <window_info anchor="bottom" id="Find" order="2" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2490242" />
+      <window_info anchor="bottom" id="Docker" order="13" weight="0.32993197" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49960968" weight="0.32993197" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49960968" visible="true" weight="0.40646258" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="right" x="3" y="248" width="1281" height="245" id="REST Client" order="6" weight="0.49960968" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39965987" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32943013" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.4727891" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003903" side_tool="true" weight="0.32993197" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32993197" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32943013" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32993197" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test travis" />
-    <MESSAGE value="test travis again" />
-    <MESSAGE value="reformat travis.yml file" />
-    <MESSAGE value="add sqlite dependency" />
-    <MESSAGE value="add dist xenial to travis" />
-    <MESSAGE value="add dist xenial to travis(2)" />
-    <MESSAGE value="fix error is_correct" />
-    <MESSAGE value="auto merge from travis" />
-    <MESSAGE value="make test fail" />
-    <MESSAGE value="test auto merge success" />
-    <MESSAGE value="test auto merge2" />
-    <MESSAGE value="test auto merge to docker" />
-    <MESSAGE value="added merge script" />
-    <MESSAGE value="updated merge script" />
-    <MESSAGE value="upated build.sh" />
-    <MESSAGE value="test auto merge agaaaain" />
-    <MESSAGE value="updated buils.sh" />
-    <MESSAGE value="testttttttttttttttttttttttt" />
-    <MESSAGE value="test auto merge" />
-    <option name="LAST_COMMIT_MESSAGE" value="test auto merge" />
+    <MESSAGE value="modify correct answer field in question &#10;+&#10;add 3 question test cases" />
+    <MESSAGE value="Edit quiz defaults" />
+    <MESSAGE value="add post and get quiz tests" />
+    <MESSAGE value="add company tests and some quiz tests" />
+    <MESSAGE value="add submit quiz tests + fix some errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="add submit quiz tests + fix some errors" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/company/tests.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/company/tests.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/quiz/tests.py</url>
+          <line>287</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/quiz/Classes/QuizManipulator.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/quiz/tests.py</url>
+          <line>354</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="28" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="DjangoTestsConfigurationType">
+        <watch expression="self.quiz_instance" language="Python" />
+        <watch expression="SkillType.objects.all()" language="Python" />
+        <watch expression="response.data" language="Python" />
+        <watch expression="Answer.objects.all()" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>Answer.objects.all()</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(Answer.objects.all())</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.quiz_instance</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response.data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.data['vacancy_questions'][0]['question_choices'][1]['choice_text']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>self.data</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response.data['detail']</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response.detail</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>response[&quot;error&quot;]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/quiz.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+    <entry file="uml://Python/#E:/Python/E-learning_org/quiz/serializers.py">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#E:/Python/E-learning_org/quiz/serializers.py</OriginalElement>
+          <nodes>
+            <node x="0.0" y="3298.0">quiz.serializers.QuizSerializer</node>
+            <node x="433.0" y="3321.0">quiz.serializers.AnswerSerializer</node>
+            <node x="302.0" y="2634.0">rest_framework.serializers.ModelSerializer</node>
+            <node x="889.0" y="3287.0">quiz.serializers.QuestionSerializer</node>
+            <node x="531.2727272727274" y="1614.0">rest_framework.serializers.BaseSerializer</node>
+            <node x="246.27272727272737" y="1801.5">rest_framework.serializers.SerializerMetaclass</node>
+            <node x="418.5" y="2113.0">rest_framework.serializers.Serializer</node>
+            <node x="212.0" y="3321.0">quiz.serializers.SkillTypeSerializer</node>
+            <node x="647.0" y="3309.5">quiz.serializers.QuizInstanceSerializer</node>
+            <node x="570.7727272727274" y="0.0">object</node>
+            <node x="36.772727272727366" y="543.0">rest_framework.fields.Field</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="rest_framework.serializers.Serializer" target="rest_framework.serializers.SerializerMetaclass">
+              <point x="-55.75" y="-235.5" />
+              <point x="474.25" y="2088.0" />
+              <point x="378.77272727272737" y="2088.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="rest_framework.serializers.Serializer" target="rest_framework.serializers.BaseSerializer">
+              <point x="55.75" y="-235.5" />
+              <point x="585.75" y="2088.0" />
+              <point x="693.2727272727274" y="2088.0" />
+              <point x="0.0" y="224.5" />
+            </edge>
+            <edge source="quiz.serializers.QuestionSerializer" target="rest_framework.serializers.ModelSerializer">
+              <point x="0.0" y="-60.0" />
+              <point x="990.5" y="3257.0" />
+              <point x="712.3999999999999" y="3257.0" />
+              <point x="182.39999999999986" y="301.5" />
+            </edge>
+            <edge source="quiz.serializers.SkillTypeSerializer" target="rest_framework.serializers.ModelSerializer">
+              <point x="0.0" y="-26.0" />
+              <point x="312.5" y="3267.0" />
+              <point x="438.79999999999995" y="3267.0" />
+              <point x="-91.20000000000005" y="301.5" />
+            </edge>
+            <edge source="rest_framework.fields.Field" target="object">
+              <point x="0.0" y="-510.5" />
+              <point x="0.0" y="246.5" />
+            </edge>
+            <edge source="rest_framework.serializers.BaseSerializer" target="rest_framework.fields.Field">
+              <point x="0.0" y="-224.5" />
+              <point x="0.0" y="510.5" />
+            </edge>
+            <edge source="rest_framework.serializers.ModelSerializer" target="rest_framework.serializers.Serializer">
+              <point x="0.0" y="-301.5" />
+              <point x="0.0" y="235.5" />
+            </edge>
+            <edge source="quiz.serializers.QuizSerializer" target="rest_framework.serializers.ModelSerializer">
+              <point x="0.0" y="-49.0" />
+              <point x="96.0" y="3257.0" />
+              <point x="347.6" y="3257.0" />
+              <point x="-182.39999999999998" y="301.5" />
+            </edge>
+            <edge source="quiz.serializers.AnswerSerializer" target="rest_framework.serializers.ModelSerializer">
+              <point x="0.0" y="-26.0" />
+              <point x="0.0" y="301.5" />
+            </edge>
+            <edge source="quiz.serializers.QuizInstanceSerializer" target="rest_framework.serializers.ModelSerializer">
+              <point x="0.0" y="-37.5" />
+              <point x="758.0" y="3267.0" />
+              <point x="621.1999999999999" y="3267.0" />
+              <point x="91.19999999999993" y="301.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8753412192902639" x="254.1787941787942" y="3110.1787941787943" />
+          <SelectedNodes>
+            <node>rest_framework.fields.Field</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Inner Classes</Category>
+            <Category>Fields</Category>
+          </Categories>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/merge_token">
+    <entry file="file://$PROJECT_DIR$/Project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state relative-caret-position="44">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DjangoModelDependency/#E-learning">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DjangoModelDependency</ID>
+          <OriginalElement>#E-learning</OriginalElement>
+          <nodes>
+            <node x="70.0" y="0.0">quiz.models.SkillType</node>
+            <node x="232.0" y="124.0">quiz.models.Question</node>
+            <node x="112.6" y="358.0">quiz.models.QuizInstance</node>
+            <node x="0.0" y="135.0">quiz.models.Quiz</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-78.0" y="225.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/utils/deprecation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://34feae5c-0e44-43e1-9874-7a9c906b687e/schema/main/table/quiz_skilltype">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+        <state relative-caret-position="207">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/mixins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="491" selection-start-line="491" selection-end-line="491" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/viewsets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="88">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/db/backends/sqlite3/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="382" selection-start-line="382" selection-end-line="382" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/db/backends/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/migrations/0002_auto_20190428_2115.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="213" selection-start-line="213" selection-end-line="213" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="12" selection-start-line="9" selection-start-column="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/migrations/0004_auto_20190428_2249.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/migrations/0003_auto_20190428_2116.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://34feae5c-0e44-43e1-9874-7a9c906b687e/schema/main/table/company_choice">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="66">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/company/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="254">
+          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker_commands.txt">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="130">
+          <caret line="605" selection-start-line="605" selection-end-line="605" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/Classes/QuizManipulator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#181#185#0" />
+            <element signature="e#237#241#0" />
+            <element signature="e#297#301#0" />
+            <element signature="e#363#367#0" />
+            <element signature="e#426#430#0" />
+            <element signature="e#484#488#0" />
+            <element signature="e#554#1081#0" />
+            <element signature="e#1147#1450#0" />
+            <element signature="e#1510#1960#0" />
+            <element signature="e#2061#2278#0" />
+            <element signature="e#2337#2437#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="74" column="114" selection-start-line="74" selection-start-column="114" selection-end-line="74" selection-end-column="114" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quiz/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="36" column="108" lean-forward="true" selection-start-line="36" selection-start-column="108" selection-end-line="36" selection-end-column="108" />
+        <state relative-caret-position="122">
+          <caret line="353" column="25" selection-start-line="353" selection-start-column="25" selection-end-line="353" selection-end-column="25" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#11043#11480#0" />
+            <element signature="e#11531#11825#0" />
+            <element signature="e#13875#14169#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/merge_script.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
