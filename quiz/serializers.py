@@ -11,7 +11,7 @@ class SkillTypeSerializer(serializers.ModelSerializer):
 class AnswerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Answer
-        fields = ['id', 'answer_text']
+        fields = ['id', 'answer_text', 'is_correct']
 
 
 class QuestionSerializer(serializers.ModelSerializer):

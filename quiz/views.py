@@ -54,7 +54,7 @@ class TakeQuiz(APIView):
 
     def post(self, request, quiz_id):
         try:
-            tbr = self.quiz_manipulator.generate_quiz_instance(self.request.data['uid'], quiz_id)
+            tbr = self.quiz_manipulator.generate_quiz_instance(request.data['uid'], quiz_id)
 
         except (QuizManipulator.WrongQuizId, QuizManipulator.WrongUserId):
             return Response({"error": "Invalid Arguments."}, status=status.HTTP_400_BAD_REQUEST)
@@ -62,21 +62,24 @@ class TakeQuiz(APIView):
         serializer = QuizInstanceSerializer(tbr)
         return Response(serializer.data)
 
+
 class SubmitQuiz(APIView):
-    def post(self, request, instance_id):
+    quiz_manipulator = QuizManipulator()
+
+    def post(self, request, quiz_instance_id):
         try:
-            tbr = self.quiz_manipulator.evaluate_quiz_instance(instance_id, request.data['answers'])
+            tbr = self.quiz_manipulator.evaluate_quiz_instance(quiz_instance_id, request.data['answers'])
 
-        except InstanceAlreadyMarked:
+        except QuizManipulator.InstanceAlreadyMarked:
             return Response({"error": "Instance Already Marked."}, status=status.HTTP_400_BAD_REQUEST)
-        except (AnswerDoesNotMatch, InvalidParams):
+        except (QuizManipulator.AnswerDoesNotMatch, QuizManipulator.InvalidParams, QuizManipulator.WrongInstanceId):
             return Response({"error": "Invalid Arguments."}, status=status.HTTP_400_BAD_REQUEST)
-
         return Response(tbr)
+
 
 class SkillScore(APIView):
     def get(self, request, skill_type_id=None):
-        uid = self.request.query_params.get('uid')
+        uid = request.query_params.get('uid')
         if not uid:
             return Response({"error": "No user id supplied."}, status=status.HTTP_400_BAD_REQUEST)
 
