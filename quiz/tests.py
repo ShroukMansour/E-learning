@@ -176,7 +176,7 @@ class GetQuizTest(APITestCase):
     def create_quiz(self, title, skill):
         url = '/quizzes/'
         data = {'title': title,
-                'pass_score': 5,
+                'pass_score': 2,
                 'num_of_questions': 3,
                 'expected_duration': 10,
                 'skill_type': {"name": skill},
@@ -187,6 +187,9 @@ class GetQuizTest(APITestCase):
         self.create_question("what's the most popular inheritance in java?", "java")
         self.create_question("what's the most popular inheritance in python?", "java")
         self.create_question("what's the most popular inheritance in matlab?", "java")
+        self.create_question("what's the most popular inheritance in java?", "python")
+        self.create_question("what's the most popular inheritance in python?", "python")
+        self.create_question("what's the most popular inheritance in matlab?", "python")
         self.create_quiz("superheroes quiz", "java")
         self.create_quiz("welcome quiz", "java")
 
@@ -199,7 +202,7 @@ class GetQuizTest(APITestCase):
     def test_get_quiz_by_id(self):
         url = '/quizzes/1/'
         data = {'title': "superheroes quiz",
-                'pass_score': 5,
+                'pass_score': 2,
                 'num_of_questions': 3,
                 'expected_duration': 10,
                 'skill_type': {"id": 1, "name": "java"},
@@ -260,7 +263,7 @@ class TakeQuizTest(APITestCase):
     def create_quiz(self, title, skill):
         url = '/quizzes/'
         data = {'title': title,
-                'pass_score': 5,
+                'pass_score': 2,
                 'num_of_questions': 3,
                 'expected_duration': 10,
                 'skill_type': {"name": skill},

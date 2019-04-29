@@ -43,6 +43,22 @@ class QuizViewSet(viewsets.ModelViewSet):
 
         return queryset
 
+    def create(self, request, **kwargs):
+        if request.data['pass_score'] > request.data['num_of_questions']:
+            return Response({"error": "Pass score can't be greater than number of questions "}, status=status.HTTP_400_BAD_REQUEST)
+        if not self.validate_num_questions(request.data):
+            return Response({"error": "No enough questions in this skill"}, status=status.HTTP_400_BAD_REQUEST)
+        return super(QuizViewSet, self).create(request, kwargs)
+
+    def validate_num_questions(self, data):
+        skill_type_filter = SkillType.objects.filter(**data["skill_type"])
+        if not skill_type_filter.exists():
+            return False
+        skill_type_filter = SkillType.objects.get(**data["skill_type"])
+        questions_set = Question.objects.filter(skill_type=skill_type_filter)
+        if len(questions_set) < data['num_of_questions']:
+            return False
+        return True
 
 class SkillTypeViewSet(viewsets.ModelViewSet):
     queryset = SkillType.objects.all()
