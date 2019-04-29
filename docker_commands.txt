@@ -4,6 +4,8 @@ sudo docker images
 // build updated image
 sudo docker build -t e_learning .
 
+// pull docker img
+
 // run the image (0.0.0.0:8000)
 sudo docker run -p 8000:8000 -i -t e_learning
 

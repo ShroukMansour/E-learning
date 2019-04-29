@@ -51,4 +51,4 @@ class QuizInstanceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = QuizInstance
-        fields = ['id', 'quiz', 'questions']
+        fields = ['id', 'questions']
