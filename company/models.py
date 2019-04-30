@@ -38,14 +38,6 @@ class VacancyQuestion(models.Model):
         return self.question_text
 
 
-class Choice(models.Model):
-    class Meta:
-        unique_together = (('choice_text', 'question'),)
-
-    choice_text = models.CharField(max_length=200)
-    question = models.ForeignKey(VacancyQuestion, on_delete=models.CASCADE, related_name='question_choices')
-
-
 class VacancyApplication(models.Model):
     user_id = models.IntegerField(null=False)
     vacancy = models.ForeignKey(Vacancy, on_delete=models.CASCADE)
@@ -58,3 +50,5 @@ class VacancyAnswer(models.Model):
 
     def __str__(self):
         return self.answer_text
+
+

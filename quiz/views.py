@@ -51,7 +51,7 @@ class QuizViewSet(viewsets.ModelViewSet):
         return super(QuizViewSet, self).create(request, kwargs)
 
     def validate_num_questions(self, data):
-        skill_type_filter = SkillType.objects.filter(**data["skill_type"])
+        skill_type_filter = SkillType.objects.filter(**data["skill_type.name"])
         if not skill_type_filter.exists():
             return False
         skill_type_filter = SkillType.objects.get(**data["skill_type"])

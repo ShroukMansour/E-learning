@@ -5,52 +5,56 @@
       <change beforePath="$PROJECT_DIR$/.idea/E-learning.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/E-learning.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/company/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_multiple_correct_answer.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_multiple_correct_answer Coverage Results" MODIFIED="1556277895014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_valid_question.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_valid_question Coverage Results" MODIFIED="1556555065378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_PostQuizTest.coverage" NAME="Test: quiz.tests.PostQuizTest Coverage Results" MODIFIED="1556285737578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_all_quizzes_successfully.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_all_quizzes_successfully Coverage Results" MODIFIED="1556290853680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest.coverage" NAME="Test: quiz.tests.SubmitQuizTest Coverage Results" MODIFIED="1556553370090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest.coverage" NAME="Test: quiz.tests.TakeQuizTest Coverage Results" MODIFIED="1556552736099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest_test_take_quiz_successfully.coverage" NAME="Test: quiz.tests.TakeQuizTest.test_take_quiz_successfully Coverage Results" MODIFIED="1556552727360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id.coverage" NAME="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id Coverage Results" MODIFIED="1556556002127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill_list_2.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill_list_2 Coverage Results" MODIFIED="1556352255306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill_list.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill_list Coverage Results" MODIFIED="1556352215776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_same_choices_for_different_questions.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_same_choices_for_different_questions Coverage Results" MODIFIED="1556485069517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest_test_submit_quiz_successfully.coverage" NAME="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully Coverage Results" MODIFIED="1556555111229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_PostQuizTest_test_post_valid_quiz.coverage" NAME="Test: quiz.tests.PostQuizTest.test_post_valid_quiz Coverage Results" MODIFIED="1556286833874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests.coverage" NAME="Test: company.tests Coverage Results" MODIFIED="1556556123806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_same_choices.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_same_choices Coverage Results" MODIFIED="1556484872617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_new_skill.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_new_skill Coverage Results" MODIFIED="1556286931312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_valid_question.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_valid_question Coverage Results" MODIFIED="1556555065378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest_test_take_quiz_with_invalid_id.coverage" NAME="Test: quiz.tests.TakeQuizTest.test_take_quiz_with_invalid_id Coverage Results" MODIFIED="1556552766633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_non_existent_quiz.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_non_existent_quiz Coverage Results" MODIFIED="1556351232924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_same_choices_names.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_same_choices_names Coverage Results" MODIFIED="1556278697816" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_req_parameters_only.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_req_parameters_only Coverage Results" MODIFIED="1556278931680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest_test_take_quiz_successfully.coverage" NAME="Test: quiz.tests.TakeQuizTest.test_take_quiz_successfully Coverage Results" MODIFIED="1556552727360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest.coverage" NAME="Test: quiz.tests.GetQuizTest Coverage Results" MODIFIED="1556363599667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_test_test_serializers.coverage" NAME="Test: company.tests.test.test_serializers Coverage Results" MODIFIED="1556475565373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest_test_submit_quiz_with_invalid_id.coverage" NAME="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id Coverage Results" MODIFIED="1556556002127" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_questionTest_test_post_valid_question.coverage" NAME="Test: quiz.tests.questionTest.test_post_valid_question Coverage Results" MODIFIED="1556269983534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_non_existent_quiz.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_non_existent_quiz Coverage Results" MODIFIED="1556351232924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests.coverage" NAME="Test: company.tests Coverage Results" MODIFIED="1556556123806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_PostQuizTest_test_post_quiz_with_invalid_pass_score.coverage" NAME="Test: quiz.tests.PostQuizTest.test_post_quiz_with_invalid_pass_score Coverage Results" MODIFIED="1556292489370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_same_choices_for_different_questions.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_same_choices_for_different_questions Coverage Results" MODIFIED="1556485069517" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_without_answers.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_without_answers Coverage Results" MODIFIED="1556279045958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill_list.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill_list Coverage Results" MODIFIED="1556352215776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_GetVacancyTest.coverage" NAME="Test: company.tests.GetVacancyTest Coverage Results" MODIFIED="1556529321623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest.coverage" NAME="Test: quiz.tests.TakeQuizTest Coverage Results" MODIFIED="1556552736099" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_nonexistent_skill.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_nonexistent_skill Coverage Results" MODIFIED="1556352006059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_PostQuizTest_test_post_valid_quiz.coverage" NAME="Test: quiz.tests.PostQuizTest.test_post_valid_quiz Coverage Results" MODIFIED="1556286833874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill Coverage Results" MODIFIED="1556351955659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_new_skill.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_new_skill Coverage Results" MODIFIED="1556286931312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_id.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_id Coverage Results" MODIFIED="1556292359211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_vacancy_with_same_choices_in_same_question.coverage" NAME="Test: company.tests.PostVacancyTest.test_vacancy_with_same_choices_in_same_question Coverage Results" MODIFIED="1556528779686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_non_existent_interest.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_non_existent_interest Coverage Results" MODIFIED="1556483853668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_valid_vacancy.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_valid_vacancy Coverage Results" MODIFIED="1556483785678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_TakeQuizTest_test_take_quiz_with_invalid_id.coverage" NAME="Test: quiz.tests.TakeQuizTest.test_take_quiz_with_invalid_id Coverage Results" MODIFIED="1556552766633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_invalid_job_type.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_invalid_job_type Coverage Results" MODIFIED="1556483957434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_same_choices.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_same_choices Coverage Results" MODIFIED="1556484872617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests.coverage" NAME="Test: quiz.tests Coverage Results" MODIFIED="1556556033435" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_invalid_job_type.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_invalid_job_type Coverage Results" MODIFIED="1556483957434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_PostQuizTest_test_post_quiz_with_invalid_pass_score.coverage" NAME="Test: quiz.tests.PostQuizTest.test_post_quiz_with_invalid_pass_score Coverage Results" MODIFIED="1556292489370" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_test_test_serializers.coverage" NAME="Test: company.tests.test.test_serializers Coverage Results" MODIFIED="1556475565373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_valid_vacancy.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_valid_vacancy Coverage Results" MODIFIED="1556483785678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest.coverage" NAME="Test: quiz.tests.GetQuizTest Coverage Results" MODIFIED="1556363599667" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_questionTest_test_post_valid_question.coverage" NAME="Test: quiz.tests.questionTest.test_post_valid_question Coverage Results" MODIFIED="1556269983534" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_questionTest.coverage" NAME="Test: quiz.tests.questionTest Coverage Results" MODIFIED="1556272242513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill_list_2.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill_list_2 Coverage Results" MODIFIED="1556352255306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_post_vacancy_with_non_existent_interest.coverage" NAME="Test: company.tests.PostVacancyTest.test_post_vacancy_with_non_existent_interest Coverage Results" MODIFIED="1556483853668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest.coverage" NAME="Test: quiz.tests.QuestionTest Coverage Results" MODIFIED="1556272259773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest_test_submit_quiz_successfully.coverage" NAME="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully Coverage Results" MODIFIED="1556555111229" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_SubmitQuizTest.coverage" NAME="Test: quiz.tests.SubmitQuizTest Coverage Results" MODIFIED="1556553370090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_PostVacancyTest_test_vacancy_with_same_choices_in_same_question.coverage" NAME="Test: company.tests.PostVacancyTest.test_vacancy_with_same_choices_in_same_question Coverage Results" MODIFIED="1556528779686" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__company_tests_GetVacancyTest.coverage" NAME="Test: company.tests.GetVacancyTest Coverage Results" MODIFIED="1556529321623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_id.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_id Coverage Results" MODIFIED="1556292359211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_GetQuizTest_test_get_quiz_by_skill.coverage" NAME="Test: quiz.tests.GetQuizTest.test_get_quiz_by_skill Coverage Results" MODIFIED="1556351955659" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_with_multiple_correct_answer.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_with_multiple_correct_answer Coverage Results" MODIFIED="1556277895014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/E_learning_org$Test__quiz_tests_QuestionTest_test_post_question_without_answers.coverage" NAME="Test: quiz.tests.QuestionTest.test_post_question_without_answers Coverage Results" MODIFIED="1556279045958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -93,26 +97,20 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quiz/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="353" column="25" selection-start-line="353" selection-start-column="25" selection-end-line="353" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#11043#11480#0" />
-                <element signature="e#11531#11825#0" />
-                <element signature="e#13875#14169#0" />
-              </folding>
+            <state relative-caret-position="527">
+              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quiz/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="119">
               <caret line="10" column="38" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="38" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -121,29 +119,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/company/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="12" selection-start-line="9" selection-start-column="12" selection-end-line="12" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/company/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="646">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -151,11 +149,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quiz/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="74" column="114" selection-start-line="74" selection-start-column="114" selection-end-line="74" selection-end-column="114" />
+            <state relative-caret-position="901">
+              <caret line="64" selection-start-line="64" selection-end-line="64" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -163,34 +161,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuizManipulator.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quiz/Classes/QuizManipulator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-                <element signature="e#181#185#0" />
-                <element signature="e#237#241#0" />
-                <element signature="e#297#301#0" />
-                <element signature="e#363#367#0" />
-                <element signature="e#426#430#0" />
-                <element signature="e#484#488#0" />
-                <element signature="e#554#1081#0" />
-                <element signature="e#1147#1450#0" />
-                <element signature="e#1510#1960#0" />
-                <element signature="e#2061#2278#0" />
-                <element signature="e#2337#2437#0" />
-              </folding>
+            <state relative-caret-position="1258">
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/quiz/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+            <state relative-caret-position="204">
+              <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
               <folding>
                 <element signature="e#0#67#0" expanded="true" />
               </folding>
@@ -212,9 +196,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response83.json" root0="SKIP_INSPECTION" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -235,15 +216,6 @@
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="9" />
     <option name="y" value="19" />
@@ -257,38 +229,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
-              <item name="Project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="E-learning_org" type="b2602c69:ProjectViewProjectNode" />
-              <item name="E-learning_org" type="462c0819:PsiDirectoryNode" />
-              <item name="quiz" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -297,7 +238,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="Docker" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
@@ -536,196 +477,6 @@
       </list>
     </option>
   </component>
-  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
-    <UpdatedFiles>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Updated from server" />
-        <option name="myStatusName" value="Changed on server" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="CHANGED_ON_SERVER" />
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Updated" />
-          <option name="myStatusName" value="Changed" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/E-learning.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/misc.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/docker_commands.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/quiz/serializers.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/quiz/urls.py</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/quiz/views.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Created" />
-          <option name="myStatusName" value="Created" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/merge_script.sh</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/quiz/Classes/QuizManipulator.py</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Deleted" />
-          <option name="myStatusName" value="Deleted" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="true" />
-          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/@plugins_snapshot.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/Project/__init__.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/Project/__init__.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/Project/urls.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/Project/urls.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_ast.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_ast.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_importlib_modulespec.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_importlib_modulespec.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_random.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/_random.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/abc.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/abc.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/ast.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/ast.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/builtins.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/builtins.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/codecs.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/codecs.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/collections/__init__.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/collections/__init__.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/collections/abc.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/collections/abc.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/datetime.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/datetime.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/importlib/__init__.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/importlib/__init__.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/importlib/abc.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/importlib/abc.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/io.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/io.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/mmap.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/mmap.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/os/__init__.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/os/__init__.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/os/path.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/os/path.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/posix.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/posix.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/__init__.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/__init__.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/admin.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/admin.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/apps.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/apps.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/migrations/0002_auto_20190318_1155.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/migrations/0002_auto_20190318_1155.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/migrations/__init__.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/migrations/__init__.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/models.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/models.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/serializers.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/serializers.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/tests.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/tests.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/urls.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/urls.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/views.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/quiz/views.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/random.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/random.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/sys.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/sys.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/time.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/time.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/types.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/types.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/typing.data.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.mypy_cache/3.5/typing.meta.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.vscode/settings.json</PATH>
-        </FILE-GROUP>
-        <FILE-GROUP>
-          <option name="myUpdateName" value="Restored" />
-          <option name="myStatusName" value="Will be restored" />
-          <option name="mySupportsDeletion" value="false" />
-          <option name="myCanBeAbsent" value="false" />
-          <option name="myId" value="RESTORED" />
-        </FILE-GROUP>
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Modified" />
-        <option name="myStatusName" value="Modified" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MODIFIED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Skipped" />
-        <option name="myStatusName" value="Skipped" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SKIPPED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with conflicts" />
-        <option name="myStatusName" value="Will be merged with conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_CONFLICTS" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with tree conflicts" />
-        <option name="myStatusName" value="Merged with tree conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged with property conflicts" />
-        <option name="myStatusName" value="Will be merged with property conflicts" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Merged" />
-        <option name="myStatusName" value="Will be merged" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="MERGED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Not in repository" />
-        <option name="myStatusName" value="Not in repository" />
-        <option name="mySupportsDeletion" value="true" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="UNKNOWN" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally added" />
-        <option name="myStatusName" value="Locally added" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_ADDED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Locally removed" />
-        <option name="myStatusName" value="Locally removed" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="LOCALLY_REMOVED" />
-      </FILE-GROUP>
-      <FILE-GROUP>
-        <option name="myUpdateName" value="Switched" />
-        <option name="myStatusName" value="Switched" />
-        <option name="mySupportsDeletion" value="false" />
-        <option name="myCanBeAbsent" value="false" />
-        <option name="myId" value="SWITCHED" />
-      </FILE-GROUP>
-    </UpdatedFiles>
-  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -739,7 +490,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Django tests.Test: company.tests">
-    <configuration name="Test: company.tests" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+    <configuration name="Test: company.tests" type="DjangoTestsConfigurationType" temporary="true">
       <module name="E-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -757,8 +508,9 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="Test: quiz.tests" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+    <configuration name="Test: quiz.tests" type="DjangoTestsConfigurationType" temporary="true">
       <module name="E-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -776,8 +528,9 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="Test: quiz.tests.QuestionTest.test_post_valid_question" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+    <configuration name="Test: quiz.tests.QuestionTest.test_post_valid_question" type="DjangoTestsConfigurationType" temporary="true">
       <module name="E-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -795,8 +548,9 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+    <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_successfully" type="DjangoTestsConfigurationType" temporary="true">
       <module name="E-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -814,8 +568,9 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method v="2" />
     </configuration>
-    <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" type="DjangoTestsConfigurationType" factoryName="Django tests" temporary="true">
+    <configuration name="Test: quiz.tests.SubmitQuizTest.test_submit_quiz_with_invalid_id" type="DjangoTestsConfigurationType" temporary="true">
       <module name="E-learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -833,6 +588,7 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="E-learning" type="Python.DjangoServer" factoryName="Django server">
       <module name="E-learning" />
@@ -856,6 +612,7 @@
       <option name="runNoReload" value="false" />
       <option name="useCustomRunCommand" value="false" />
       <option name="customRunCommand" value="" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Django server.E-learning" />
@@ -886,6 +643,7 @@
       <option name="presentableId" value="Default" />
       <updated>1554993768941</updated>
       <workItem from="1554993772287" duration="599000" />
+      <workItem from="1556569348610" duration="765000" />
     </task>
     <task id="LOCAL-00001" summary="modify correct answer field in question &#10;+&#10;add 3 question test cases">
       <created>1556278446217</created>
@@ -958,69 +716,65 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="599000" />
+    <option name="totallyTimeSpent" value="1364000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12405446" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32993197" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49960968" visible="true" weight="0.40646258" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39965987" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003903" side_tool="true" weight="0.32993197" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="right" x="3" y="248" width="1281" height="245" id="REST Client" order="6" weight="0.49960968" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49960968" weight="0.32993197" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32993197" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49960968" visible="true" weight="0.40646258" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32943013" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.4727891" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2490242" />
-      <window_info anchor="bottom" id="Docker" order="13" weight="0.32993197" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32943013" />
-      <window_info anchor="right" id="SciView" order="5" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39965987" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" weight="0.32993197" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32943013" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32993197" />
-      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32943013" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info anchor="right" x="3" y="248" width="1281" height="245" id="REST Client" order="6" weight="0.49960968" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2490242" />
-      <window_info anchor="bottom" id="Docker" order="13" weight="0.32993197" />
-      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49960968" weight="0.32993197" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49960968" visible="true" weight="0.40646258" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="right" x="3" y="248" width="1281" height="245" id="REST Client" order="6" weight="0.49960968" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.39965987" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32943013" />
-      <window_info anchor="bottom" id="Terminal" order="12" weight="0.4727891" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003903" side_tool="true" weight="0.32993197" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32993197" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32943013" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49960968" visible="true" weight="0.40646258" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39965987" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003903" side_tool="true" weight="0.32993197" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49960968" weight="0.32993197" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32993197" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.4727891" />
+      <window_info anchor="bottom" id="Docker" order="13" weight="0.32993197" />
+      <window_info anchor="right" id="Coverage" order="0" side_tool="true" weight="0.32943013" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32943013" />
+      <window_info anchor="right" id="SciView" order="5" />
+      <window_info anchor="right" x="3" y="248" width="1281" height="245" id="REST Client" order="6" weight="0.49960968" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="modify correct answer field in question &#10;+&#10;add 3 question test cases" />
@@ -1043,26 +797,7 @@
           <line>69</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/quiz/tests.py</url>
-          <line>287</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/quiz/Classes/QuizManipulator.py</url>
-          <line>89</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/quiz/tests.py</url>
-          <line>354</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="DjangoTestsConfigurationType">
@@ -1196,7 +931,7 @@
               <point x="91.19999999999993" y="301.5" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.8753412192902639" x="254.1787941787942" y="3110.1787941787943" />
+          <settings layout="Hierarchic Group" zoom="0.8753412192902639" x="254.0" y="3110.0" />
           <SelectedNodes>
             <node>rest_framework.fields.Field</node>
           </SelectedNodes>
@@ -1205,6 +940,7 @@
             <Category>Inner Classes</Category>
             <Category>Fields</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -1233,23 +969,12 @@
           <Categories>
             <Category>Fields</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/utils/deprecation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="93" selection-start-line="93" selection-end-line="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://34feae5c-0e44-43e1-9874-7a9c906b687e/schema/main/table/quiz_skilltype">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/utils/deprecation.py" />
+    <entry file="das://34feae5c-0e44-43e1-9874-7a9c906b687e/schema/main/table/quiz_skilltype" />
     <entry file="file://$PROJECT_DIR$/Project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -1257,54 +982,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/mixins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="491" selection-start-line="491" selection-end-line="491" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/viewsets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/views/decorators/csrf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/core/handlers/exception.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/mixins.py" />
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/views.py" />
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/viewsets.py" />
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/views/decorators/csrf.py" />
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/core/handlers/base.py" />
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/core/handlers/exception.py" />
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.js" />
     <entry file="file://$PROJECT_DIR$/quiz/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1312,57 +999,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/db/backends/sqlite3/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="382" selection-start-line="382" selection-end-line="382" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/db/backends/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/db/backends/sqlite3/base.py" />
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/django/db/backends/utils.py" />
     <entry file="file://$PROJECT_DIR$/company/migrations/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/company/migrations/0002_auto_20190428_2115.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="213" selection-start-line="213" selection-end-line="213" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/company/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="12" selection-start-line="9" selection-start-column="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/company/migrations/0004_auto_20190428_2249.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/company/migrations/0003_auto_20190428_2116.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://34feae5c-0e44-43e1-9874-7a9c906b687e/schema/main/table/company_choice">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/company/migrations/0002_auto_20190428_2115.py" />
+    <entry file="file://$USER_HOME$/venv/Python/Lib/site-packages/rest_framework/serializers.py" />
+    <entry file="file://$PROJECT_DIR$/company/migrations/0004_auto_20190428_2249.py" />
+    <entry file="file://$PROJECT_DIR$/company/migrations/0003_auto_20190428_2116.py" />
+    <entry file="das://34feae5c-0e44-43e1-9874-7a9c906b687e/schema/main/table/company_choice" />
     <entry file="file://$PROJECT_DIR$/quiz/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -1380,13 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/company/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
@@ -1397,26 +1036,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/unittest/case.py" />
+    <entry file="file://$PROJECT_DIR$/quiz/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="605" selection-start-line="605" selection-end-line="605" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/company/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quiz/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="119">
           <caret line="10" column="38" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="38" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -1424,56 +1054,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/Classes/QuizManipulator.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#181#185#0" />
-            <element signature="e#237#241#0" />
-            <element signature="e#297#301#0" />
-            <element signature="e#363#367#0" />
-            <element signature="e#426#430#0" />
-            <element signature="e#484#488#0" />
-            <element signature="e#554#1081#0" />
-            <element signature="e#1147#1450#0" />
-            <element signature="e#1510#1960#0" />
-            <element signature="e#2061#2278#0" />
-            <element signature="e#2337#2437#0" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/serializers.py">
+    <entry file="file://$PROJECT_DIR$/company/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
-            <element signature="e#0#67#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quiz/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="74" column="114" selection-start-line="74" selection-start-column="114" selection-end-line="74" selection-end-column="114" />
+        <state relative-caret-position="901">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/quiz/tests.py">
+    <entry file="file://$PROJECT_DIR$/quiz/Classes/QuizManipulator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="353" column="25" selection-start-line="353" selection-start-column="25" selection-end-line="353" selection-end-column="25" />
+        <state relative-caret-position="1258">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/quiz/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#11043#11480#0" />
-            <element signature="e#11531#11825#0" />
-            <element signature="e#13875#14169#0" />
+            <element signature="e#0#67#0" expanded="true" />
           </folding>
         </state>
       </provider>

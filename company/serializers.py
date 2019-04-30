@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from company.models import VacancyQuestion, Vacancy, VacancyAnswer, VacancyApplication, SkillType, JobType, Choice
+from company.models import VacancyQuestion, Vacancy, VacancyAnswer, VacancyApplication, SkillType, JobType
 from quiz.serializers import SkillTypeSerializer
 
 
@@ -9,18 +9,10 @@ class JobTypeSerializer(serializers.ModelSerializer):
         fields = ['name']
 
 
-class ChoiceSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Choice
-        fields = ('choice_text',)
-
-
 class VacancyQuestionSerializer(serializers.ModelSerializer):
-    question_choices = ChoiceSerializer(many=True)
-
     class Meta:
         model = VacancyQuestion
-        fields = ('question_text', 'question_choices')
+        fields = ('id', 'question_text')
 
 
 class VacancySerializer(serializers.ModelSerializer):

@@ -51,7 +51,9 @@ class QuizSerializer(serializers.ModelSerializer):
 
 class QuizInstanceSerializer(serializers.ModelSerializer):
     questions = QuestionSerializer(many=True)
+    expected_duration = serializers.ReadOnlyField(source='quiz.expected_duration')
 
     class Meta:
         model = QuizInstance
-        fields = ['id', 'questions']
+        fields = ['id', 'questions', 'expected_duration']
+        depth = 1
