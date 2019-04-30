@@ -1,4 +1,5 @@
 Django==2.2
 djangorestframework
+django-cors-headers
 drf_yasg
 coverage
