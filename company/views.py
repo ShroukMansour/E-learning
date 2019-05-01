@@ -4,7 +4,7 @@ from rest_framework.response import Response
 from django.http import Http404
 from rest_framework import status
 
-from company.models import Vacancy, VacancyApplication, VacancyAnswer, VacancyQuestion
+from company.models import Vacancy, VacancyApplication, VacancyAnswer, VacancyQuestion, APILog
 from company.serializers import VacancySerializer, VacancyApplicationSerializer, VacancyAnswerSerializer
 from rest_framework import generics
 
@@ -19,15 +19,24 @@ class VacancyList(generics.ListCreateAPIView):
 
         if companyId:
             queryset = Vacancy.objects.filter(company_id__in=companyId)
+            log = APILog(description=("User Searched for Vacancies in company with id " + str(companyId)))
         else:
             queryset = Vacancy.objects.all()
+            log = APILog(description="User Searched for all Vacancies")
 
+        log.save()
         return queryset
 
 
 class VacancyDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Vacancy.objects.all()
     serializer_class = VacancySerializer
+
+    def get_queryset(self):
+        log = APILog(description="User Searched for Vacancy with id " + str(self.kwargs.get('pk')))
+        log.save()
+        
+        return Vacancy.objects.filter(id=self.kwargs.get('pk'))
 
 
 class ApplyForVacancy(APIView):
@@ -51,12 +60,16 @@ class ApplyForVacancy(APIView):
 
                 db_objects.append(answer)
                 answer.save()
-        except (KeyError, VacancyQuestion.DoesNotExist, VacancyQuestion.DoesNotExist):
+        except (KeyError, VacancyQuestion.DoesNotExist):
             for db_object in db_objects:
                 db_object.delete()
 
+            log = APILog(description=("User with id " + str(uid) + " applied for Vacancy with id " + str(app.id) + "but send invalid parameters."))
+            log.save()
             return Response({"error": "Invalid Params."}, status=status.HTTP_400_BAD_REQUEST)
 
+        log = APILog(description=("User with id " + str(uid) + " applied for Vacancy with id " + str(app.id)))
+        log.save()
         return Response()
 
 
@@ -78,6 +91,10 @@ class VacancyApplicationList(APIView):
                     "answers": VacancyAnswerSerializer(answers, many=True).data
                 })
             
+            log = APILog(description=("User with id " + str(uid) + " applied for Vacancy with id " + str(app.id)))
+            log.save()
             return Response(tbr)
         except:
+            log = APILog(description=("User with id " + str(uid) + " applied for Vacancy with id " + str(app.id) + "but send invalid parameters."))
+            log.save()
             return Response({"error": "Invalid Params."}, status=status.HTTP_400_BAD_REQUEST)

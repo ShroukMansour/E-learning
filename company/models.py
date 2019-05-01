@@ -58,3 +58,10 @@ class VacancyAnswer(models.Model):
 
     def __str__(self):
         return self.answer_text
+
+
+class APILog(models.Model):
+    description = models.TextField(max_length=1000)
+
+    def __str__(self):
+        return self.description

@@ -52,3 +52,10 @@ class QuizInstance(models.Model):
 
     def __str__(self):
         return str(self.user) + " => " + self.quiz.__str__()
+
+
+class APILog(models.Model):
+    description = models.TextField(max_length=1000)
+
+    def __str__(self):
+        return self.description
