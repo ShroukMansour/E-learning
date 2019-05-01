@@ -63,21 +63,21 @@ class ApplyForVacancy(APIView):
 class VacancyApplicationList(APIView):
     def get(self, request):
         try:
-            vacany_id = self.request.query_params.get('vacanyId')
+            vacany_id = request.query_params.get('vacancyId')
 
             if vacany_id:
                 applications = VacancyApplication.objects.filter(vacancy=Vacancy.objects.get(id=vacany_id))
             else:
                 applications = VacancyApplication.objects.none()
 
-            tbr = {"apps": []}
+            tbr = []
             for app in applications:
                 answers = VacancyAnswer.objects.filter(vacancy_application=app)
-                tbr["apps"].append({
+                tbr.append({
                     "application": VacancyApplicationSerializer(app).data,
                     "answers": VacancyAnswerSerializer(answers, many=True).data
                 })
-            
+
             return Response(tbr)
         except:
             return Response({"error": "Invalid Params."}, status=status.HTTP_400_BAD_REQUEST)
