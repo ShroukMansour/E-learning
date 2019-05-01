@@ -3,7 +3,7 @@ from django.db import IntegrityError, transaction
 from rest_framework import status
 from rest_framework.test import APITestCase
 
-from company.models import Vacancy, VacancyQuestion, Choice, JobType
+from company.models import Vacancy, VacancyQuestion, Choice, JobType, VacancyApplication, VacancyAnswer
 from quiz.models import SkillType
 
 
@@ -147,6 +147,7 @@ class GetVacancyTest(APITestCase):
                 },
                 "vacancy_questions": [
                     {
+                        "id": 2,
                         "question_text": "How old are you",
                         "question_choices": [
                             {
@@ -170,3 +171,110 @@ class GetVacancyTest(APITestCase):
         url = '/vacancies/10/'
         response = self.client.get(url, format='json')
         self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+
+
+class ApplyVacancyTest(APITestCase):
+    def create_vacancy(self):
+        JobType.objects.create(name='Full Time')
+        JobType.objects.create(name='Half Time')
+        JobType.objects.create(name='Intern')
+        self.data = {"company_id": 1,
+                     "title": "Software Engineer",
+                     "description": "Design programs",
+                     "requirements": "problem solving skills",
+                     "benefits": "transportation covered",
+                     "salary": 2000,
+                     "job_type": "Full Time",
+                     "interest_field": {
+                         "name": "java"
+                     },
+                     "vacancy_questions": [
+                         {
+                             "question_text": "How old are you",
+                             "question_choices": [
+                                 {
+                                     "choice_text": "20"
+                                 },
+                                 {
+                                     "choice_text": "30"
+                                 }
+                             ]
+                         }
+                     ]
+                     }
+        url = '/vacancies/'
+        response = self.client.post(url, data=self.data, format='json')
+
+    def setUp(self):
+        self.create_vacancy()
+
+    def test_apply_vacancy_successfully(self):
+        url = '/vacancies/apply/1/'
+        data = {
+            "uid": 1,
+            "answers": [{
+                "questionId": 1,
+                "answer": "20",
+            }]
+        }
+        response = self.client.post(url, data = data , format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(VacancyApplication.objects.count(), 1)
+        self.assertEqual(VacancyAnswer.objects.count(), 1)
+        self.assertEqual(VacancyApplication.objects.get().user_id, 1)
+
+class GetApplicationsTest(APITestCase):
+    def create_vacancy(self):
+
+        self.data = {"company_id": 1,
+                     "title": "Software Engineer",
+                     "description": "Design programs",
+                     "requirements": "problem solving skills",
+                     "benefits": "transportation covered",
+                     "salary": 2000,
+                     "job_type": "Full Time",
+                     "interest_field": {
+                         "name": "java"
+                     },
+                     "vacancy_questions": [
+                         {
+                             "question_text": "How old are you",
+                             "question_choices": [
+                                 {
+                                     "choice_text": "20"
+                                 },
+                                 {
+                                     "choice_text": "30"
+                                 }
+                             ]
+                         }
+                     ]
+                     }
+        url = '/vacancies/'
+        response = self.client.post(url, data=self.data, format='json')
+
+    def apply_for_vacancy(self, userId):
+        url = '/vacancies/apply/1/'
+        data = {
+            "uid": userId,
+            "answers": [{
+                "questionId": 1,
+                "answer": "20",
+            }]
+        }
+        response = self.client.post(url, data=data, format='json')
+
+    def setUp(self):
+        JobType.objects.create(name='Full Time')
+        JobType.objects.create(name='Half Time')
+        JobType.objects.create(name='Intern')
+        self.create_vacancy()
+        self.apply_for_vacancy(1)
+        self.apply_for_vacancy(2)
+
+    def test_get_all_applications(self):
+        url = "/applications/"
+        response = self.client.get(url, data={"vacancyId" : 1}, format='json')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertEqual(len(response.data), 2)
+        self.assertEqual(len(response.data[0]['answers']), 1)

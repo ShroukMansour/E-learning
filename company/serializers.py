@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from company.models import VacancyQuestion, Vacancy, VacancyAnswer, VacancyApplication, SkillType, JobType
+from company.models import VacancyQuestion, Vacancy, VacancyAnswer, VacancyApplication, SkillType, JobType, Choice
 from quiz.serializers import SkillTypeSerializer
 
 
@@ -9,10 +9,18 @@ class JobTypeSerializer(serializers.ModelSerializer):
         fields = ['name']
 
 
+class ChoiceSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Choice
+        fields = ('choice_text',)
+
+
 class VacancyQuestionSerializer(serializers.ModelSerializer):
+    question_choices = ChoiceSerializer(many=True)
+
     class Meta:
         model = VacancyQuestion
-        fields = ('id', 'question_text')
+        fields = ('id', 'question_text', 'question_choices')
 
 
 class VacancySerializer(serializers.ModelSerializer):
@@ -43,14 +51,15 @@ class VacancySerializer(serializers.ModelSerializer):
 
 class VacancyAnswerSerializer(serializers.ModelSerializer):
     question = VacancyQuestionSerializer()
-    
+
     class Meta:
         model = VacancyAnswer
         fields = ["question", "answer_text"]
 
+
 class VacancyApplicationSerializer(serializers.ModelSerializer):
     vacancy_id = serializers.ReadOnlyField(source="vacancy.id")
-    
+
     class Meta:
         model = VacancyApplication
         fields = ["vacancy_id", "user_id"]

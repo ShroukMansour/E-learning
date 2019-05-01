@@ -76,23 +76,24 @@ class ApplyForVacancy(APIView):
 class VacancyApplicationList(APIView):
     def get(self, request):
         try:
-            vacany_id = self.request.query_params.get('vacanyId')
+            vacany_id = request.query_params.get('vacancyId')
 
             if vacany_id:
                 applications = VacancyApplication.objects.filter(vacancy=Vacancy.objects.get(id=vacany_id))
             else:
                 applications = VacancyApplication.objects.none()
 
-            tbr = {"apps": []}
+            tbr = []
             for app in applications:
                 answers = VacancyAnswer.objects.filter(vacancy_application=app)
-                tbr["apps"].append({
+                tbr.append({
                     "application": VacancyApplicationSerializer(app).data,
                     "answers": VacancyAnswerSerializer(answers, many=True).data
                 })
             
             log = APILog(description=("User with id " + str(uid) + " applied for Vacancy with id " + str(app.id)))
             log.save()
+
             return Response(tbr)
         except:
             log = APILog(description=("User with id " + str(uid) + " applied for Vacancy with id " + str(app.id) + "but send invalid parameters."))
