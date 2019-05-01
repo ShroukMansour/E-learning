@@ -91,11 +91,11 @@ class VacancyApplicationList(APIView):
                     "answers": VacancyAnswerSerializer(answers, many=True).data
                 })
             
-            log = APILog(description=("User with id " + str(uid) + " applied for Vacancy with id " + str(app.id)))
+            log = APILog(description=("User searched for all applications for the vacancy with id " + str(vacany_id)))
             log.save()
 
             return Response(tbr)
         except:
-            log = APILog(description=("User with id " + str(uid) + " applied for Vacancy with id " + str(app.id) + "but send invalid parameters."))
+            log = APILog(description=("User searched for all applications for a specific vacancy but sent invalid parameters"))
             log.save()
             return Response({"error": "Invalid Params."}, status=status.HTTP_400_BAD_REQUEST)
