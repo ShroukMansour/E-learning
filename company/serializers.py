@@ -39,3 +39,18 @@ class VacancySerializer(serializers.ModelSerializer):
                 Choice.objects.create(question=q, **choice)
 
         return vacancy
+
+
+class VacancyAnswerSerializer(serializers.ModelSerializer):
+    question = VacancyQuestionSerializer()
+    
+    class Meta:
+        model = VacancyAnswer
+        fields = ["question", "answer_text"]
+
+class VacancyApplicationSerializer(serializers.ModelSerializer):
+    vacancy_id = serializers.ReadOnlyField(source="vacancy.id")
+    
+    class Meta:
+        model = VacancyApplication
+        fields = ["vacancy_id", "user_id"]
